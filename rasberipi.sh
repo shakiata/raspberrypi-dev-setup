@@ -25,8 +25,9 @@ echo
 echo !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 echo Jenkins URL: "localhost:8090" or "192.168.0.19:8090"
 echo
-echo Jenkins Password bellow!!
+echo Jenkins setup Password:
 sudo docker exec -it jenkins-server2 cat /var/jenkins_home/secrets/initialAdminPassword
 echo !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 echo
 echo
+
