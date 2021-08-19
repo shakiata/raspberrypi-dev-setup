@@ -13,7 +13,7 @@ sudo docker run -d --name jenkins-server -p 8091:8080 -p 50000:50000 mlucken/jen
 
 echo Jenkins server starting...
 
-sleep 30
+sleep 40
 
 sudo docker start jenkins-server
 
@@ -22,14 +22,14 @@ sudo docker update --restart unless-stopped jenkins-server
 
 echo
 echo
-echo ////////////////////////////////////////
+echo --------------------------------------------
 echo
 echo Jenkins URL: "localhost:8090" or "192.168.0.19:8090"
 echo
 echo Jenkins setup Password:
 sudo docker exec -it jenkins-server cat /var/jenkins_home/secrets/initialAdminPassword
 echo
-echo ////////////////////////////////////////////
+echo -------------------------------------------------
 echo
 echo
 
