@@ -7,10 +7,6 @@ echo Installing rasberypi autoconfig.
 sleep 3
 echo Installing Jenkins
 
-# Setup Jenkins Home Dir working folder
-cd /home/james
-mkdir jenkins_home
-
 sudo docker pull mlucken/jenkins-arm
 
 sudo docker run -d --name jenkins-server2 -p 8090:8080 -p 50000:50000 mlucken/jenkins-arm;
