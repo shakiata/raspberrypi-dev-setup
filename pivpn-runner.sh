@@ -2,7 +2,7 @@
 
 docker pull ljishen/pivpn
 
-docker run -d --name pivpn-server -ti --rm \
+docker run --name pivpn-server -ti --rm \
      --privileged \
      -p 443:443/udp \
      -v "$HOME"/ovpns:/home/pivpn/ovpns \
