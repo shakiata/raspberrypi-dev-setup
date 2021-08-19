@@ -24,7 +24,12 @@ echo Docker daemon starting...
 
 sleep 10
 
-echo Jenkins server starting...
+echo Setting up vaiables...
+
+# Create local IP variable and bind to show default local interface IP
+mylocalip=$(sudo ip addr show eth0 | grep "inet\b" | awk '{print $2}' | cut -d/ -f1)
+# Create Public IP variable and bind to show default Public IP
+mypublicip=$(curl https://ipinfo.io/ip)
 
 sleep 10
 
@@ -45,10 +50,6 @@ sudo docker start jenkins-server
 #Set Jebkins docker instance to restart automatic on system reboot
 sudo docker update --restart unless-stopped jenkins-server
 
-# Create local IP variable and bind to show default local interface IP
-mylocalip=$(sudo ip addr show eth0 | grep "inet\b" | awk '{print $2}' | cut -d/ -f1)
-# Create Public IP variable and bind to show default Public IP
-mypublicip=$(curl https://ipinfo.io/ip)
 
 
 
@@ -57,7 +58,7 @@ echo
 echo ----------------- Jenkins URLS---------------------------
 echo
 echo Local Addresses: "localhost:8090" or "$mylocalip:8090" 
-echo Public Address: "$mypublicip:8090" (requires port fwd on router) 
+echo Public Address: "$mypublicip:8090"
 echo
 echo Jenkins setup Password:
 sudo docker exec -it jenkins-server cat /var/jenkins_home/secrets/initialAdminPassword
