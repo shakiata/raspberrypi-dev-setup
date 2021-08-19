@@ -1,2 +1,2 @@
-run pihole-docker-compose up -d
+sudo docker run pihole-docker-compose up -d
 
