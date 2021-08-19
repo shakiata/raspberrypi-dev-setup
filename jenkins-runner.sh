@@ -1,5 +1,14 @@
 #!bin/bash
 
+# Install Prerequisties
+echo Installing Prerequisties..
+echo Installing Docker...
+sudo apt install docker
+
+echo Installing IProute2...
+sudo apt -y install iproute2
+
+
 # remove old docker image if present
 sudo docker rm -f jenkins-server
 
@@ -23,7 +32,7 @@ echo Running first time setup...
 
 sleep 10 
 
-echo almost there...
+echo Almost there...
 
 sleep 10 
 
@@ -36,16 +45,24 @@ sudo docker start jenkins-server
 #Set Jebkins docker instance to restart automatic on system reboot
 sudo docker update --restart unless-stopped jenkins-server
 
+# Create local IP variable and bind to show default local interface IP
+mylocalip=$(sudo ip addr show eth0 | grep "inet\b" | awk '{print $2}' | cut -d/ -f1)
+# Create Public IP variable and bind to show default Public IP
+mypublicip=$(curl https://ipinfo.io/ip)
+
+
+
 echo
 echo
-echo --------------------------------------------
+echo ----------------- Jenkins URLS---------------------------
 echo
-echo Jenkins URL: "localhost:8090" or "192.168.0.19:8090"
+echo Local Addresses: "localhost:8090" or "$mylocalip:8090" 
+echo Public Address: "$mypublicip:8090" (requires port fwd on router) 
 echo
 echo Jenkins setup Password:
 sudo docker exec -it jenkins-server cat /var/jenkins_home/secrets/initialAdminPassword
 echo
-echo -------------------------------------------------
+echo -------------------------------------------------------------------
 echo
 echo
 echo Finished!
