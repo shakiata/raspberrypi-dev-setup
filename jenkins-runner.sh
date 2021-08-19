@@ -2,6 +2,7 @@
 
 # remove old docker image if present
 sudo docker rm -f jenkins-server
+sudo docker rm -f jenkins-server2
 
 echo Installing rasberypi autoconfig.
 sleep 3
@@ -9,7 +10,7 @@ echo Installing Jenkins
 
 sudo docker pull mlucken/jenkins-arm
 
-sudo docker run -d --name jenkins-server2 -p 8091:8080 -p 50000:50000 mlucken/jenkins-arm;
+sudo docker run -d --name jenkins-server -p 8091:8080 -p 50000:50000 mlucken/jenkins-arm;
 
 echo docker daemon starting...
 
