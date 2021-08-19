@@ -13,7 +13,7 @@ sudo docker run -d --name jenkins-server2 -p 8090:8080 -p 50000:50000 mlucken/je
 
 echo docker daemon starting...
 
-Sleep 15
+sleep 30
 
 sudo docker start jenkins-server2
 
