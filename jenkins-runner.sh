@@ -11,7 +11,7 @@ sudo docker pull mlucken/jenkins-arm
 
 sudo docker run -d --name jenkins-server -p 8091:8080 -p 50000:50000 mlucken/jenkins-arm;
 
-echo Docker Daemon Startiing
+echo Docker daemon starting...
 
 sleep 10
 
@@ -19,11 +19,17 @@ echo Jenkins server starting...
 
 sleep 10
 
-echo running first time setup...
+echo Running first time setup...
+
+sleep 10 
+
+echo almost there...
 
 sleep 10 
 
 echo Starting Jenkins...
+sleep 1
+echo Success!
 
 sudo docker start jenkins-server
 
