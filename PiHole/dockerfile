@@ -1,0 +1,5 @@
+FROM osrf/ubuntu_arm64
+
+RUN  apt-get update
+    
+WORKDIR /root/pihole
