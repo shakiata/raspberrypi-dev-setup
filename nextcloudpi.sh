@@ -5,7 +5,7 @@ echo Installing Prerequisties..
 echo Installing Docker...
 sudo apt install docker
 
-echo Installing IProute2...
+echo Installing IProute2 and creating local variables...
 sudo apt -y install iproute2
 
 # Create local IP variable and bind to show default local interface IP
@@ -15,10 +15,13 @@ mypublicip=$(curl https://ipinfo.io/ip)
 
 # remove old docker image if present
 sudo docker rm -f nextcloudpi
-
+# Pulls docker image
 sudo docker pull nexcloud
-
+# Runs Installs Docker image
 sudo docker run -d -p 4443:4443 -p 8443:443 -p 8092:80 -v ncdata:/data --name nextcloudpi nextcloud $DOMAIN
+
+#Set Nextcloud docker instance to restart automatic on system reboot
+sudo docker update --restart unless-stopped nextcloudpi
 
 echo
 echo
