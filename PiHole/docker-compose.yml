@@ -10,11 +10,6 @@ services:
       - "80:80/tcp"
     environment:
       TZ: 'America/Chicago'
-      # WEBPASSWORD: '8108453500!'
-    # Volumes store your data between container upgrades
-    volumes:
-      - './etc-pihole/:/etc/pihole/'
-      - './etc-dnsmasq.d/:/etc/dnsmasq.d/'
     # Recommended but not required (DHCP needs NET_ADMIN)
     #   https://github.com/pi-hole/docker-pi-hole#note-on-capabilities
     cap_add:
