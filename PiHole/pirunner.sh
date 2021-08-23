@@ -6,6 +6,11 @@ sudo apt install python3-dev
 sudo apt-get install -y python3 python3-pip
 sudo pip3 install docker-compose
 
+# Create local IP variable and bind to show default local interface IP
+mylocalip=$(sudo ip addr show eth0 | grep "inet\b" | awk '{print $2}' | cut -d/ -f1)
+# Create Public IP variable and bind to show default Public IP
+mypublicip=$(curl https://ipinfo.io/ip)
+
 # Run container
 docker-compose up --detach
 
