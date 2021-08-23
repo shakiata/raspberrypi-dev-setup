@@ -6,10 +6,10 @@ services:
     container_name: pihole
     image: pihole/pihole:latest
     ports:
-      - "533:53/tcp"
-      - "533:53/udp"
-      - "677:67/udp"
-      - "8090:80/tcp"
+      - "53:53/tcp"
+      - "53:53/udp"
+      - "67:67/udp"
+      - "80:80/tcp"
     environment:
       TZ: 'America/Toronto'
       WEBPASSWORD: '8108453500!'
