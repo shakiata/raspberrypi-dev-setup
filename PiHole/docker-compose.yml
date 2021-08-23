@@ -12,7 +12,6 @@ services:
       - "80:80/tcp"
     environment:
       TZ: 'America/Toronto'
-      WEBPASSWORD: '8108453500!'
     # Volumes store your data between container upgrades
     volumes:
       - './etc-pihole/:/etc/pihole/'
