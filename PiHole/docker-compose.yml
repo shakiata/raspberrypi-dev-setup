@@ -11,7 +11,7 @@ services:
       - "677:67/udp"
       - "8090:80/tcp"
     environment:
-      TZ: 'America/Chicago'
+      TZ: 'America/Toronto'
       WEBPASSWORD: '8108453500!'
     # Volumes store your data between container upgrades
     volumes:
