@@ -1,0 +1,32 @@
+#!bin/bash
+
+# system host prereqs
+sudo apt-get install libffi-dev libssl-dev
+sudo apt install python3-dev
+sudo apt-get install -y python3 python3-pip  
+sudo pip3 install docker-compose
+
+# Create local IP variable and bind to show default local interface IP
+mylocalip=$(sudo ip addr show eth0 | grep "inet\b" | awk '{print $2}' | cut -d/ -f1)
+
+
+# Pull/Run container
+sudo docker pull portainer/portainer-ce
+# remove old images
+sudo docker rm -f portainer
+
+sudo docker volume create portainer_data
+
+docker run -d -p 8090:8000 -p 9090:9000 --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce
+  
+
+echo
+echo
+echo ----------------- Portainer URLS---------------------------
+echo
+echo Local Address: "$mylocalip:32400/manage"
+echo
+echo -------------------------------------------------------------------
+echo
+echo
+echo Finished!
