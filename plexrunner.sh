@@ -45,7 +45,7 @@ echo
 echo
 echo ----------------- Plex URLS---------------------------
 echo
-echo Local Address: "$mylocalip:8093"
+echo Local Address: "$mylocalip:32400"
 echo
 # echo PiHole Admin Password:
 # sudo docker exec -it pihole sudo pihole -a -p
