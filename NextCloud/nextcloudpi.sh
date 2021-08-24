@@ -18,20 +18,18 @@ sudo docker rm -f nextcloudpi
 # Pulls docker image
 sudo docker pull nextcloud
 # Runs Installs Docker image
-sudo docker run -d -p 4443:4443 -p 8443:443 -p 8092:80 -v ncdata:/data --name nextcloudpi nextcloud $DOMAIN
+sudo docker run -d -p 4443:4443 -p 8443:443 -p 8092:80 -v /home/james/ncdata:/data --name nextcloudpi nextcloud $DOMAIN
 
 #Set Nextcloud docker instance to restart automatic on system reboot
 sudo docker update --restart unless-stopped nextcloudpi
+
 
 echo
 echo
 echo ----------------- Jenkins URLS---------------------------
 echo
-echo Local Addresses: "localhost:8092" or "$mylocalip:8092" 
-echo Public Address: "$mypublicip:8092"
-echo
-echo Jenkins setup Password:
-sudo docker exec -it jenkins-server cat /var/jenkins_home/secrets/initialAdminPassword
+echo Local Addresses: "$mylocalip:8092" 
+echo Public Address:  "$mypublicip:8092"
 echo
 echo -------------------------------------------------------------------
 echo
