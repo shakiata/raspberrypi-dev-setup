@@ -18,7 +18,7 @@ mylocalip=$(sudo ip addr show eth0 | grep "inet\b" | awk '{print $2}' | cut -d/ 
 docker pull plexinc/pms-docker
 # sudo docker run -d --name plex-server -p 8093:32400 -v plex/transcode:/transcode -v plex/database:/config plexinc/pms-docker;
 
-docker run \
+sudo docker run \
 -d \
 --name plex \
 -p 32400:32400/tcp \
