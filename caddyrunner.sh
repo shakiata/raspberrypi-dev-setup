@@ -1,6 +1,12 @@
 #!bin/bash
 
+# Create local IP variable and bind to show default local interface IP
+mylocalip=$(sudo ip addr show eth0 | grep "inet\b" | awk '{print $2}' | cut -d/ -f1)
+
 docker pull caddy
+
+# remove old images
+sudo docker rm -f caddy-webserver
 
 cd
 sudo mkdir caddy_data; cd
@@ -10,8 +16,7 @@ sudo chmod 777 websites
 sudo chmod 777 caddy_data
 
 echo "hello world" > index.html
-docker run -d -p 8080:80 \
-    --name=caddy-webserver \
+docker run -d -p 8080:80 --name=caddy-webserver \
     -v /home/james/websites:/usr/share/caddy/index.html \
     -v /home/james/caddy_data:/data \
     caddy
