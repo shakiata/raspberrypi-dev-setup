@@ -18,7 +18,7 @@ cd;
 sudo docker pull linuxserver/plex
 # sudo docker run -d --name plex-server -p 8093:32400 -v plex/transcode:/transcode -v plex/database:/config plexinc/pms-docker;
 
-sudo rm -f plex
+sudo docker rm -f plex
 
 # sudo docker run \
 # -d \
@@ -47,6 +47,8 @@ sudo docker run -d \
   -v /home/james/plex/database:/config \
   -v /home/james/plex/transcode:/transcode \
   -v /home/james/plex/plexmedia:/data \
+  -e TZ="America/Toronto" \
+  -e ADVERTISE_IP="http://192.168.0.29:32400/" \
   --restart unless-stopped \
   ghcr.io/linuxserver/plex
 
