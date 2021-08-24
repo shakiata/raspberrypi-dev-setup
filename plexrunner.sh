@@ -34,9 +34,9 @@ sudo docker run \
 -p 32414:32414/udp \
 -e TZ="America/Toronto" \
 -e ADVERTISE_IP="http://192.168.0.29:32400/" \
--v plex/database:/config \
--v plex/transcode:/transcode \
--v plex/plexmedia:/data \
+-v /home/james/plex/database:/config \
+-v /home/james/plex/transcode:/transcode \
+-v /home/james/plex/plexmedia:/data \
 plexinc/pms-docker
 
 
