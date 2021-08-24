@@ -13,6 +13,13 @@ mylocalip=$(sudo ip addr show eth0 | grep "inet\b" | awk '{print $2}' | cut -d/ 
 # Create Public IP variable and bind to show default Public IP
 mypublicip=$(curl https://ipinfo.io/ip)
 
+
+cd
+sudo mkdir ncdata
+cd
+sudo shmod 777 /home/james/ncdata
+
+
 # remove old docker image if present
 sudo docker rm -f nextcloudpi
 # Pulls docker image
