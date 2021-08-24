@@ -23,6 +23,10 @@ docker run -d -p 8080:80 --name=caddy-webserver \
 
 curl http://localhost/8080
 
+
+# Set website root to /index.html/<your site folder here>
+sudo docker exec -it caddy-webserver vi /etc/caddy/Caddyfile
+
 echo
 echo
 echo ----------------- Plex URLS---------------------------
