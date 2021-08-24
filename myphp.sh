@@ -8,16 +8,6 @@ sudo docker pull phpmyadmin
 
 docker run --name myphpadmin -d --link mariadb:db -p 8095:80 phpmyadmin
 
-sudo docker run -d \
-  --name=mariadb \
-  -e PUID=1000 \
-  -e PGID=1000 \
-  -e MYSQL_ROOT_PASSWORD=8108453500! \
-  -e TZ=America/Toronto \
-  -p 8094:3306 \
-  --restart unless-stopped \
-  ghcr.io/linuxserver/mariadb
-
 echo
 echo
 echo ----------------- Wordpress URLS---------------------------
