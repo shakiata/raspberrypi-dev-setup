@@ -9,13 +9,13 @@ sudo pip3 install docker-compose
 # Create local IP variable and bind to show default local interface IP
 mylocalip=$(sudo ip addr show eth0 | grep "inet\b" | awk '{print $2}' | cut -d/ -f1)
 
-# sudo mkdir plex
-# cd plex
-# sudo mkdir database; mkdir transcode
-# cd
+sudo mkdir plex
+cd plex
+sudo mkdir database; mkdir transcode; mkdir plexmedia
+cd
 
 # Pull/Run container
-docker pull plexinc/pms-docker
+sudo docker pull plexinc/pms-docker
 # sudo docker run -d --name plex-server -p 8093:32400 -v plex/transcode:/transcode -v plex/database:/config plexinc/pms-docker;
 
 sudo docker run \
@@ -33,8 +33,8 @@ sudo docker run \
 -e TZ="<timezone>" \
 -e ADVERTISE_IP="http://192.168.0.29:32400/" \
 -v plex/database>:/config \
--v transcode/temp>:/transcode \
--v plexmedia:/data \
+-v plex/transcode/temp>:/transcode \
+-v plex/plexmedia:/data \
 plexinc/pms-docker
 
 
