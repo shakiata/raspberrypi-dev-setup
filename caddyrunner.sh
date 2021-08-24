@@ -18,3 +18,13 @@ docker run -d -p 8080:80 \
 
 curl http://localhost/
 
+echo
+echo
+echo ----------------- Plex URLS---------------------------
+echo
+echo Local Address: "$mylocalip:8080" or "localhost:8080"
+echo
+echo -------------------------------------------------------------------
+echo
+echo
+echo Finished!
