@@ -17,7 +17,7 @@ mypublicip=$(curl https://ipinfo.io/ip)
 cd
 sudo mkdir ncdata
 cd
-sudo shmod 777 /home/james/ncdata
+sudo chmod 777 /home/james/ncdata
 
 
 # remove old docker image if present
