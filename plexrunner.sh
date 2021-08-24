@@ -37,6 +37,7 @@ sudo docker run \
 -v /home/james/plex/database:/config \
 -v /home/james/plex/transcode:/transcode \
 -v /home/james/plex/plexmedia:/data \
+--restart unless-stopped \
 linuxserver/plex
 
 
