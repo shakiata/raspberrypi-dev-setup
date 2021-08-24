@@ -11,12 +11,14 @@ mylocalip=$(sudo ip addr show eth0 | grep "inet\b" | awk '{print $2}' | cut -d/ 
 
 sudo mkdir plex
 cd plex
-sudo mkdir database; mkdir transcode; mkdir plexmedia
+sudo mkdir database; mkdir transcode/temp; mkdir plexmedia
 cd
 
 # Pull/Run container
 sudo docker pull plexinc/pms-docker
 # sudo docker run -d --name plex-server -p 8093:32400 -v plex/transcode:/transcode -v plex/database:/config plexinc/pms-docker;
+
+sudo rm -f plex
 
 sudo docker run \
 -d \
@@ -30,10 +32,10 @@ sudo docker run \
 -p 32412:32412/udp \
 -p 32413:32413/udp \
 -p 32414:32414/udp \
--e TZ="<timezone>" \
+-e TZ="America/Toronto" \
 -e ADVERTISE_IP="http://192.168.0.29:32400/" \
--v plex/database>:/config \
--v plex/transcode/temp>:/transcode \
+-v plex/database:/config \
+-v plex/transcode/temp:/transcode \
 -v plex/plexmedia:/data \
 plexinc/pms-docker
 
