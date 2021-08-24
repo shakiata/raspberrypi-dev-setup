@@ -4,11 +4,19 @@
 # Create local IP variable and bind to show default local interface IP
 mylocalip=$(sudo ip addr show eth0 | grep "inet\b" | awk '{print $2}' | cut -d/ -f1)
 
-docker pull mariadb
+sudo docker pull linuxserver/mariadb
 
 # docker run --name some-mysql -p 8094:8080 -e MYSQL_ROOT_PASSWORD=8108453500! -d mysql
 
-docker run -it --name some-mysql -p 8094:8080 --rm mariadb mysql -hsome-mariadb -admin -p
+sudo docker run -d \
+  --name=mariadb \
+  -e PUID=1000 \
+  -e PGID=1000 \
+  -e MYSQL_ROOT_PASSWORD=8108453500! \
+  -e TZ=America/Toronto \
+  -p 8094:3306 \
+  --restart unless-stopped \
+  ghcr.io/linuxserver/mariadb
 
 echo
 echo
