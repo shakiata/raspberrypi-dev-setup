@@ -15,7 +15,7 @@ sudo mkdir database; sudo mkdir transcode; sudo mkdir plexmedia
 cd;
 
 # Pull/Run container
-sudo docker pull linuxserver/plex
+sudo docker pull plexinc/pms-docker
 # sudo docker run -d --name plex-server -p 8093:32400 -v plex/transcode:/transcode -v plex/database:/config plexinc/pms-docker;
 
 sudo rm -f plex
@@ -38,7 +38,7 @@ sudo docker run \
 -v /home/james/plex/transcode:/transcode \
 -v /home/james/plex/plexmedia:/data \
 --restart unless-stopped \
-linuxserver/plex
+plexinc/pms-docker
 
 
 
