@@ -11,7 +11,7 @@ mylocalip=$(sudo ip addr show eth0 | grep "inet\b" | awk '{print $2}' | cut -d/ 
 
 sudo mkdir plex
 cd plex
-sudo mkdir database; mkdir transcode/temp; mkdir plexmedia
+sudo mkdir database; sudo mkdir transcode/temp; sudo mkdir plexmedia
 cd
 
 # Pull/Run container
