@@ -8,6 +8,8 @@ docker pull wordpress
 
 docker run --name wordpress -p 8091:80 -d wordpress
 
+sudo docker update --restart unless-stopped wordpress
+
 
 echo
 echo
