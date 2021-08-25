@@ -27,14 +27,11 @@ sudo docker run -d \
   -e VERSION=docker \
   -v /home/james/plex/database:/config \
   -v /home/james/plex/transcode:/transcode \
-  -v /media/james/New Volume:/data \
   -v /home/james/plex/plexmedia:/data \
   -e TZ="America/Toronto" \
   -e ADVERTISE_IP="http://192.168.0.29:32400/" \
   --restart unless-stopped \
   linuxserver/plex
-
-
 
 echo
 echo
