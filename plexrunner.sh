@@ -29,7 +29,7 @@ sudo docker run -d \
   -v /home/james/plex/transcode:/transcode \
   -v /media/james/New Volume:/data \
   -v /home/james/plex/plexmedia:/data \
-  -v /media/james/New \Volume:/data \
+  -v /mnt/wwn-0x5000c5005cb6f2e1-part1:/data \
   -e TZ="America/Toronto" \
   -e ADVERTISE_IP="http://192.168.0.29:32400/" \
   --restart unless-stopped \
