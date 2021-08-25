@@ -7,6 +7,7 @@ mypublicip=$(curl https://ipinfo.io/ip)
 
 # Step 4: Set up the VPN container
 
+OVPN_DATA="ovpn-data"
 
 sudo docker volume create --name $OVPN_DATA
 sudo docker run -v $OVPN_DATA:/etc/openvpn --log-driver=none --rm mjenz/rpi-openvpn ovpn_genconfig -u udp://$mypublicip
