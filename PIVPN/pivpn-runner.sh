@@ -7,6 +7,9 @@ mypublicip=$(curl https://ipinfo.io/ip)
 
 # Step 4: Set up the VPN container
 
+sudo docker rm -f ovpn-server
+sudo docker volume rm ovpn-data
+
 OVPN_DATA="ovpn-data"
 
 sudo docker volume create --name $OVPN_DATA
