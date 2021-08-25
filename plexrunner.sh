@@ -32,7 +32,7 @@ sudo docker run -d \
   -e TZ="America/Toronto" \
   -e ADVERTISE_IP="http://192.168.0.29:32400/" \
   --restart unless-stopped \
-  ghcr.io/linuxserver/plex
+  linuxserver/plex
 
 
 
