@@ -8,6 +8,8 @@ sudo docker pull phpmyadmin
 
 docker run --name myphpadmin -d --link mariadb:db -p 8095:80 phpmyadmin
 
+sudo docker update --restart unless-stopped myphpadmin
+
 echo
 echo
 echo ----------------- Wordpress URLS---------------------------
