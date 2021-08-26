@@ -25,7 +25,7 @@ echo
 echo ----------------- SonarQube URLS---------------------------
 echo
 echo Local Address: "$mylocalip:8096"
-echo
+echo Default Login: admin/admin
 echo
 echo -------------------------------------------------------------------
 echo
