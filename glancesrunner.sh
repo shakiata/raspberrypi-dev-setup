@@ -16,7 +16,7 @@ sudo docker pull nicolargo/glances
 sudo docker rm -f glances-sys-monitor
 
 # Launch Portainer
-sudo docker run --name glances-sys-monitor -d --restart="always" -p 8093-8093:61208-61209 -e GLANCES_OPT="-w" -v /var/run/docker.sock:/var/run/docker.sock:ro --pid host nicolargo/glances
+sudo docker run --name glances-sys-monitor -d --restart="always" -p 8093:61208-61209 -e GLANCES_OPT="-w" -v /var/run/docker.sock:/var/run/docker.sock:ro --pid host nicolargo/glances
 
 
 sudo docker update --restart unless-stopped glances-sys-monitor
