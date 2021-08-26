@@ -18,7 +18,7 @@ sudo docker rm -f sonarqube
 # Launch Sonar qube
 docker run -d --name sonarqube -p 8096:9000 pagracia/rpi-sonarqube:7.9.5-lts
 
-sudo docker update --restart unless-stopped sonarqube
+sudo docker update --restart unless-stopped sonarqubed
 
 echo
 echo
