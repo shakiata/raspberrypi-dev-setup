@@ -17,7 +17,7 @@ sudo docker rm -f nginx
 
 # docker run -d -p 8000:8000 -p 8096:9000 --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce
 # docker run --name nginx -v /home/james/websites/nginx.conf:/etc/nginx/nginx.conf -d nginx
-docker run --name nginx -v /home/james/websites/nginx.conf:/usr/share/nginx/html:ro -d nginx
+docker run --name nginx -p 8096:80 -p 8098:443 -v /home/james/websites/nginx.conf:/usr/share/nginx/html:ro -d nginx
 
 sudo docker update --restart unless-stopped nginx
 
