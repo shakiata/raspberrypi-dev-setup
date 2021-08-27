@@ -1,6 +1,6 @@
 version: '2'
 services:
-proxy:
+  proxy:
 build: ./
 networks:
 - example1
