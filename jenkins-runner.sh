@@ -16,9 +16,10 @@ echo Installing rasberypi autoconfig.
 sleep 3
 echo Installing Jenkins
 
-sudo docker pull mlucken/jenkins-arm
+#sudo docker pull mlucken/jenkins-arm
+sudo docker pull jenkins4eval/jenkins
 
-sudo docker run -d --name jenkins-server -p 8091:8080 -p 50000:50000 mlucken/jenkins-arm;
+sudo docker run -d --name jenkins-server -p 8097:8080 -p 50000:50000 -v /home/james/websites:/var/jenkins_home  jenkins4eval/jenkins;
 
 echo Docker daemon starting...
 
@@ -57,8 +58,8 @@ echo
 echo
 echo ----------------- Jenkins URLS---------------------------
 echo
-echo Local Addresses: "localhost:8091" or "$mylocalip:8091" 
-echo Public Address: "$mypublicip:8091"
+echo Local Addresses: "localhost:8097" or "$mylocalip:8097" 
+echo Public Address: "$mypublicip:8097"
 echo
 echo Jenkins setup Password:
 sudo docker exec -it jenkins-server cat /var/jenkins_home/secrets/initialAdminPassword
