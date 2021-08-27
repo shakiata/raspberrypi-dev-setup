@@ -1,0 +1,9 @@
+version: '2'
+services:
+ app:
+  image: nginx
+  container_name: reverseproxy
+  volumes:
+   - /home/james/websites/nginx.conf/proxyserver:/usr/share/nginx/html
+  ports:
+   - "8083:80"
