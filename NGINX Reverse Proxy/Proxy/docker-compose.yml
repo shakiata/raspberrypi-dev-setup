@@ -3,16 +3,16 @@ services:
   proxy:
 build: ./
 networks:
-- example1
-- example2
+  - example1
+  - example2
 ports:
-- 8080:80
-- 8443:443
+  - 8080:80
+  - 8443:443
 
 networks:
-example1:
-external:
+  example1:
+  external:
 name: example1_default
-example2:
-external:
+  example2:
+  external:
 name: example2_default
