@@ -1,7 +1,6 @@
 version: '2'
 services:
 proxy:
-container_name: reverseproxy
 build: ./
 networks:
 - example1
