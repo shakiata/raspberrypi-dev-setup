@@ -58,8 +58,8 @@ echo
 echo
 echo ----------------- Jenkins URLS---------------------------
 echo
-echo Local Addresses: "localhost:8091" or "$mylocalip:8091" 
-echo Public Address: "$mypublicip:8091"
+echo Local Addresses: "localhost:8097" or "$mylocalip:8097" 
+echo Public Address: "$mypublicip:8097"
 echo
 echo Jenkins setup Password:
 sudo docker exec -it jenkins-server cat /var/jenkins_home/secrets/initialAdminPassword
