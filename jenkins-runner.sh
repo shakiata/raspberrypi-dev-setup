@@ -16,9 +16,10 @@ echo Installing rasberypi autoconfig.
 sleep 3
 echo Installing Jenkins
 
-sudo docker pull mlucken/jenkins-arm
+#sudo docker pull mlucken/jenkins-arm
+sudo docker pull jenkins4eval/jenkins
 
-sudo docker run -d --name jenkins-server -p 8097:8080 -p 50000:50000 -v /home/james/websites:/var/jenkins_home  mlucken/jenkins-arm;
+sudo docker run -d --name jenkins-server -p 8097:8080 -p 50000:50000 -v /home/james/websites:/var/jenkins_home  jenkins4eval/jenkins;
 
 echo Docker daemon starting...
 
