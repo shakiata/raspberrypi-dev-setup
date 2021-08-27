@@ -1,0 +1,9 @@
+version: '2'
+services:
+ app:
+  image: nginx
+  container_name: webserver1
+  volumes:
+   - /home/james/websites/nginx.conf/webserver1/lucinda-art-gallery:/usr/share/nginx/html
+  ports:
+   - "8081:80"
