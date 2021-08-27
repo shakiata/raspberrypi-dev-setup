@@ -15,12 +15,8 @@ sudo docker pull nginx
 # remove old images
 sudo docker rm -f nginx
 
-# Launch Portainer
-
-sudo docker volume create portainer_data
-
 # docker run -d -p 8000:8000 -p 8096:9000 --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce
-docker run --name nginx -v -v /home/james/websites/ngnix:/etc/nginx/nginx.conf:ro -d nginx
+docker run --name nginx -v /home/james/websites/ngnix:/etc/nginx/nginx.conf:ro -d nginx
 
 sudo docker update --restart unless-stopped nginx
 
@@ -30,8 +26,6 @@ echo ----------------- ngnix URLS---------------------------
 echo
 echo Local Address: "$mylocalip:8096"
 echo
-echo run Run the following command to deploy the Agent in your Docker host:
-echo docker run -d -p 9091:9001 --name portainer_agent --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v /var/lib/docker/volumes:/var/lib/docker/volumes portainer/agent
 echo -------------------------------------------------------------------
 echo
 echo
