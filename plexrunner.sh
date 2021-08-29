@@ -46,3 +46,7 @@ echo
 echo Finished!
 
 sudo mount /dev/sda1 /home/james/plex/plexmedia/WD1TB
+
+sudo ufw allow 32400/tcp
+sudo ufw allow 32400/udp
+
