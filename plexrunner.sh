@@ -11,8 +11,8 @@ mylocalip=$(sudo ip addr show eth0 | grep "inet\b" | awk '{print $2}' | cut -d/ 
 
 cd; sudo mkdir plex
 cd plex
-sudo mkdir database; sudo mkdir transcode; sudo mkdir plexmedia
-cd;
+sudo mkdir database; sudo mkdir transcode; sudo mkdir plexmedia; cd plexmedia; mkdir WD1TB
+cd
 
 # Pull/Run container
 sudo docker pull linuxserver/plex
@@ -29,7 +29,7 @@ sudo docker run -d \
   -v /home/james/plex/transcode:/transcode \
   -v /home/james/plex/plexmedia:/data \
   -e TZ="America/Toronto" \
-  -e ADVERTISE_IP="http://192.168.0.29:32400/" \
+  -e ADVERTISE_IP="http://192.168.0.19:32400/" \
   --restart unless-stopped \
   linuxserver/plex
 
@@ -43,3 +43,5 @@ echo -------------------------------------------------------------------
 echo
 echo
 echo Finished!
+
+sudo mount /dev/sda1 /home/james/plex/plexmedia/WD1TB
