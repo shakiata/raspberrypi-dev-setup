@@ -16,12 +16,18 @@ echo Installing rasberypi autoconfig.
 sleep 3
 echo Installing Jenkins
 
-cd; mkdir docker-container-data; cd
+cd 
+
+mkdir docker-container-data
+chmod 777 docker-container-data
+
 
 #sudo docker pull mlucken/jenkins-arm
 sudo docker pull jenkins4eval/jenkins
 
 sudo docker run -d --name jenkins-server -p 8091:8080 -p 50000:50000 -v /home/james/docker-container-data:/var/jenkins_home  jenkins4eval/jenkins;
+
+
 
 echo Docker daemon starting...
 
