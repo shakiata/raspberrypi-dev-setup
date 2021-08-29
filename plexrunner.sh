@@ -10,6 +10,7 @@ sudo pip3 install docker-compose
 mylocalip=$(sudo ip addr show eth0 | grep "inet\b" | awk '{print $2}' | cut -d/ -f1)
 
 cd; sudo mkdir plex
+sudo chmod 777 plex
 cd plex
 sudo mkdir database; sudo mkdir transcode; sudo mkdir plexmedia; cd plexmedia; mkdir WD1TB
 cd
