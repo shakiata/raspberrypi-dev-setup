@@ -25,7 +25,7 @@ sudo docker rm -f nextcloudpi
 # Pulls docker image
 sudo docker pull nextcloud
 # Runs Installs Docker image
-sudo docker run -d -p 4443:4443 -p 8443:443 -p 8092:80 -v /media/james/pi-ssd/nextcloud:/data --name nextcloudpi nextcloud $DOMAIN
+sudo docker run -d -p 4443:4443 -p 8443:443 -p 8092:80 -v /home/james/ncdata:/data --name nextcloudpi nextcloud $DOMAIN
 
 #Set Nextcloud docker instance to restart automatic on system reboot
 sudo docker update --restart unless-stopped nextcloudpi
