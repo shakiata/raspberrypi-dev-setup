@@ -28,7 +28,7 @@ sudo docker run -d \
   -e VERSION=docker \
   -v /media/james/pi-ssd/container-program-files/plex/database:/config \
   -v /media/james/pi-ssd/container-program-files/plex/transcode:/transcode \
-  -v /media/james/pi-ssd/plex_files:/data \
+  -v /media/james/pi-ssd/share_files/plex_files:/data \
   -e TZ="America/Toronto" \
   -e ADVERTISE_IP="http://192.168.0.29:32400/" \
   --restart unless-stopped \
