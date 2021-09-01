@@ -4,6 +4,6 @@ services:
   image: nginx
   container_name: webserver2
   volumes:
-   - /home/james/websites/nginx.conf/webserver2/lucinda-art-gallery:/usr/share/nginx/html
+   - /media/james/pi-ssd/share_files/Websites/lucinda-art-gallery:/usr/share/nginx/html
   ports:
    - "8082:80"
