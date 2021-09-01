@@ -26,11 +26,11 @@ sudo docker run -d \
   -e PUID=1000 \
   -e PGID=1000 \
   -e VERSION=docker \
-  -v /home/james/plex/database:/config \
-  -v /home/james/plex/transcode:/transcode \
-  -v /home/james/plex/plexmedia:/data \
+  -v /media/james/pi-ssd/container-program-files/plex/database:/config \
+  -v /media/james/pi-ssd/container-program-files/plex/transcode:/transcode \
+  -v /media/james/pi-ssd/plex_files:/data \
   -e TZ="America/Toronto" \
-  -e ADVERTISE_IP="http://192.168.0.19:32400/" \
+  -e ADVERTISE_IP="http://192.168.0.29:32400/" \
   --restart unless-stopped \
   linuxserver/plex
 
