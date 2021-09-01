@@ -22,16 +22,15 @@ sudo docker pull nextcloud
 # sudo docker run -d -p 4443:4443 -p 8443:443 -p 8092:80 -v /home/james/plex/plexmedia/nextcloud:/data --name nextcloudpi nextcloud $DOMAIN
 
  docker run -d \
-    -v /media/james/pi-ssd/Container Program Files/NextCloud/nextcloudroot:/var/www/html \
-    -v /media/james/pi-ssd/Container Program Files/NextCloud/apps:/var/www/html/custom_apps \
-    -v /media/james/pi-ssd/Container Program Files/NextCloud/config:/var/www/html/config \
-    -v /media/james/pi-ssd/Container Program Files/NextCloud/data:/var/www/html/data \
+    -v /media/james/pi-ssd/container-program-files/nextcloud/nextcloudroot:/var/www/html \
+    -v /media/james/pi-ssd/container-program-files/nextcloud/apps:/var/www/html/custom_apps \
+    -v /media/james/pi-ssd/container-program-files/nextcloud/config:/var/www/html/config \
+    -v /media/james/pi-ssd/container-program-files/nextcloud/data:/var/www/html/data \
     -v /media/james/pi-ssd/nextcloud_files:/data \
     -p 8443:443 \
     -p 8092:80 \
     --name nextcloudpi \
     nextcloud \
-    $DOMAIN
 
 #Set Nextcloud docker instance to restart automatic on system reboot
 sudo docker update --restart unless-stopped nextcloudpi
