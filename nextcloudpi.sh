@@ -14,18 +14,12 @@ mylocalip=$(sudo ip addr show eth0 | grep "inet\b" | awk '{print $2}' | cut -d/ 
 mypublicip=$(curl https://ipinfo.io/ip)
 
 
-cd
-sudo mkdir ncdata
-cd
-sudo chmod 777 /home/james/ncdata
-
-
 # remove old docker image if present
 sudo docker rm -f nextcloudpi
 # Pulls docker image
 sudo docker pull nextcloud
 # Runs Installs Docker image
-sudo docker run -d -p 4443:4443 -p 8443:443 -p 8092:80 -v /home/james/ncdata:/data --name nextcloudpi nextcloud $DOMAIN
+sudo docker run -d -p 4443:4443 -p 8443:443 -p 8092:80 -v /home/james/plex/plexmedia/nextcloud:/data --name nextcloudpi nextcloud $DOMAIN
 
 #Set Nextcloud docker instance to restart automatic on system reboot
 sudo docker update --restart unless-stopped nextcloudpi
