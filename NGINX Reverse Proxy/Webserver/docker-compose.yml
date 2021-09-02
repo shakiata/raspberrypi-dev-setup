@@ -5,7 +5,6 @@ services:
   container_name: webserver1
   volumes:
    - /media/james/pi-ssd/share_files/Websites/lucinda-art-gallery:/usr/share/nginx/html
-   - /media/james/pi-ssd/container-program-files/ngnix/webserver1:/etc/
   ports:
    - "8080:80"
   environment:
