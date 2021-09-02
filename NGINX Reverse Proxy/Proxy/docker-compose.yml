@@ -1,18 +1,9 @@
-version: '2'
-services:
-  proxy:
-build: ./
-networks:
-  - example1
-  - example2
-ports:
-  - 8080:80
-  - 8443:443
-
-networks:
-  example1:
-  external:
-name: example1_default
-  example2:
-  external:
-name: example2_default
+web:
+  image: nginx
+  volumes:
+   - ./templates:/etc/nginx/templates
+  ports:
+   - "8080:80"
+  environment:
+   - NGINX_HOST=foobar.com
+   - NGINX_PORT=80
