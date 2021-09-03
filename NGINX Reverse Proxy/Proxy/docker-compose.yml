@@ -4,7 +4,7 @@ services:
   image: nginx
   container_name: proxyserver
   volumes:
-   - /media/james/pi-ssd/share_files/Websites/lucinda-art-gallery:/usr/share/nginx/html
+   - /media/james/pi-ssd/share_files/Websites/reverseproxy:/usr/share/nginx/html
   ports:
    - "80:80"
   environment:
