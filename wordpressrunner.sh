@@ -4,9 +4,11 @@
 mylocalip=$(sudo ip addr show eth0 | grep "inet\b" | awk '{print $2}' | cut -d/ -f1)
 
 
+docker rm -f wordpress
+
 docker pull wordpress
 
-docker run --name wordpress -p 8096:80 -e WORDPRESS_DB_USER=root -e WORDPRESS_DB_PASSWORD=8108453500! -d wordpress
+docker run --name wordpress -p 8096:80 -d wordpress
 
 sudo docker update --restart unless-stopped wordpress
 
