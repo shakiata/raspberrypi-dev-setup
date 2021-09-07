@@ -8,13 +8,6 @@ docker pull caddy
 # remove old images
 sudo docker rm -f caddy-webserver
 
-cd
-sudo mkdir caddy_data; cd
-mkdir websites; cd
-
-sudo chmod 777 websites
-sudo chmod 777 caddy_data
-
 echo "hello world" > index.html
 docker run -d -p 8080:80 --name=caddy-webserver \
     -v /home/james/websites:/index.html \
