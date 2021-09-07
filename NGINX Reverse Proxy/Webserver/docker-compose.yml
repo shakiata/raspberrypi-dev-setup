@@ -5,6 +5,7 @@ services:
   container_name: webserver1
   volumes:
    - /media/james/pi-ssd/share_files/Websites/branconet:/usr/share/nginx/html
+   - /media/james/pi-ssd/share_files/Websites/webserver1/config:/etc/nginx/conf.d
   ports:
    - "8080:80"
   environment:
