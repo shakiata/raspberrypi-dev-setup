@@ -5,7 +5,7 @@ services:
   container_name: ws1-lucinda.branconet.com
   volumes:
    - /media/james/pi-ssd/share_files/Websites/branconet:/usr/share/nginx/html
-   - /media/james/pi-ssd/continer-program-files/Websites/webserver1/config:/etc/nginx/conf.d
+   - /media/james/pi-ssd/container-program-files/Websites/webserver1/config:/etc/nginx/conf.d
   ports:
    - "8080:80"
   environment:
