@@ -9,5 +9,5 @@ services:
   ports:
    - "80:80"
   environment:
-   - NGINX_HOST=lucinda.branconet.com
+   - NGINX_HOST=proxy.branconet.com
    - NGINX_PORT=80
