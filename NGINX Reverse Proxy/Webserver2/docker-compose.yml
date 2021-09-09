@@ -4,7 +4,7 @@ services:
   image: nginx
   container_name: ws2-santos.branconet.com
   volumes:
-   - /media/james/pi-ssd/share_files/Websites/lucinda-art-gallery:/usr/share/nginx/html
+   - /media/james/pi-ssd/share_files/Websites/santosweb:/usr/share/nginx/html
   #  - /media/james/pi-ssd/container-program-files/Websites/webserver1/config:/etc/nginx/conf.d
   ports:
    - "8081:80"
