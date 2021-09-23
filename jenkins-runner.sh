@@ -23,9 +23,9 @@ sudo chmod 777 docker-container-data
 
 
 #sudo docker pull mlucken/jenkins-arm
-sudo docker pull jenkins4eval/jenkins
+sudo docker pull jenkins/jenkins
 
-sudo docker run -d --name jenkins-server -p 8091:8080 -p 50000:50000 -v /home/james/docker-container-data:/var/jenkins_home  jenkins4eval/jenkins;
+sudo docker run -d --name jenkins-server -p 8091:8080 -p 50000:50000 -v /home/uadmin/docker-container-data/jenkins_home:/var/jenkins_home  jenkins4eval/jenkins;
 
 
 
