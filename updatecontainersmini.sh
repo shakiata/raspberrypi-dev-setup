@@ -20,8 +20,6 @@ echo /////////////////////
 bash glancesrunner.sh
 bash portaineragent.sh
 
-docker scan $(docker images -q)
-
 echo /////////////////////
 echo Images Updated... Starting Containers.
 echo /////////////////////
@@ -34,11 +32,5 @@ sudo docker start glances-sys-monitor
 echo /////////////////////
 echo Local IPs Bellow:
 echo /////////////////////
-
-echo Plex: "$localip:32400"
-echo Protainer: "localip:8090"
-echo PI: "$localip:8091"
-echo Webserver: "$localip"
-echo Fileserver: "$localip:8092"
 
 echo UPDATE COMPLETE. Containers Rebuilt.
