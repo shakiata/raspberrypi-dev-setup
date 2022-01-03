@@ -19,7 +19,7 @@ echo
 echo Local Addresse: "$mylocalip/admin"
 echo
 echo PiHole Admin Password:
-sudo docker exec -it pihole sudo pihole -a -p
+# sudo docker exec -it pihole sudo pihole -a -p
 echo
 echo -------------------------------------------------------------------
 echo
