@@ -24,7 +24,9 @@ echo Images Updated... Starting Containers.
 echo /////////////////////
 
 #Starts all Containers
-docker start $(docker ps -a -q)
+sudo docker start portainer_agent
+sudo docker start gances-sys-monitor
+sudo docker start glances-sys-monitor
 
 echo /////////////////////
 echo Local IPs Bellow:
