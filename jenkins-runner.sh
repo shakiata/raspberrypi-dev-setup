@@ -76,5 +76,5 @@ echo
 echo
 echo Finished!
 
-# GENERATE SSH KEY: docker exec -it jenkins-server ssh-keygen -t rsa -b 4096
+# GENERATE SSH KEY: docker exec -it jenkins-server ssh-keygen -t rsa -b 4096 -m PEM
 
