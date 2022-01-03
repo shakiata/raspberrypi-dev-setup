@@ -9,6 +9,7 @@ echo /////////////////////
 echo Stoping Containers...
 echo /////////////////////
 docker stop glances-sys-monitor
+docker stop portainer_agent
 
    
 # Pulls images and Runs Containers and updates them
@@ -17,6 +18,7 @@ echo Pulling Images...
 echo /////////////////////
 # bash jenkinsrunner.sh
 bash glancesrunner.sh
+bash portaineragent.sh
 
 docker scan $(docker images -q)
 
