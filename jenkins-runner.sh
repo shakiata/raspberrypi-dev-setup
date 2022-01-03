@@ -76,3 +76,5 @@ echo
 echo
 echo Finished!
 
+# GENERATE SSH KEY: ' ssh-keygen -t rsa -b 4096 '
+
