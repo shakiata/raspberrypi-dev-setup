@@ -14,7 +14,7 @@ docker kill $(docker ps -q)
 echo /////////////////////
 echo Pulling Images...
 echo /////////////////////
-cd NGINX
+cd NGINX Reverse Proxy
 cd Proxy
 bash runner.sh
 cd..
