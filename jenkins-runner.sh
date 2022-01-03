@@ -17,8 +17,8 @@ echo Installing Jenkins
 
 cd 
 
-mkdir docker-container-data
-sudo chmod 777 docker-container-data
+mkdir jenkins_home
+chmod 777 /home/james/jenkins_home
 
 
 #sudo docker pull mlucken/jenkins-arm
