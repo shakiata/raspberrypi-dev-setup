@@ -14,7 +14,7 @@ docker kill $(docker ps -q)
 echo /////////////////////
 echo Pulling Images...
 echo /////////////////////
-bash jenkinsrunner.sh
+# bash jenkinsrunner.sh
 bash glancesrunner.sh
 
 docker scan $(docker images -q)
