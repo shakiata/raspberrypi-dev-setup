@@ -25,7 +25,7 @@ echo /////////////////////
 
 #Starts all Containers
 sudo docker start portainer_agent
-sudo docker start gances-sys-monitor
+sudo docker start jenkins-server
 sudo docker start glances-sys-monitor
 
 echo /////////////////////
