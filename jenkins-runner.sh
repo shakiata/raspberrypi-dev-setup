@@ -1,5 +1,7 @@
 #!bin/bash
 
+usrdir=$(eval echo ~$USER)
+
 # Install Prerequisties
 echo Installing Prerequisties..
 echo Installing Docker...
@@ -18,13 +20,13 @@ echo Installing Jenkins
 cd 
 
 mkdir jenkins_home
-chmod 777 /home/james/jenkins_home
+chmod 777 $usrdir/jenkins_home
 
 
 #sudo docker pull mlucken/jenkins-arm
 sudo docker pull jenkins/jenkins
 
-sudo docker run -d --name jenkins-server -p 8091:8080 -p 50000:50000 -v /home/james/jenkins_home:/var/jenkins_home  jenkins/jenkins;
+sudo docker run -d --name jenkins-server -p 8091:8080 -p 50000:50000 -v $usrdir/jenkins_home:/var/jenkins_home  jenkins/jenkins;
 
 
 
