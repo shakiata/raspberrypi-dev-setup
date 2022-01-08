@@ -16,6 +16,7 @@ services:
     volumes:
       - '/home/james/pihole/:/etc/pihole/'
       - '/home/james/dnsmasq.d/:/etc/dnsmasq.d/'
+      - '/home/james/unbound.d/:/etc/unbound/'
     # Recommended but not required (DHCP needs NET_ADMIN)
     #   https://github.com/pi-hole/docker-pi-hole#note-on-capabilities
     cap_add:
