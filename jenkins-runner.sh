@@ -24,9 +24,9 @@ chmod 777 $usrdir/jenkins_home
 
 
 #sudo docker pull mlucken/jenkins-arm
-sudo docker pull jenkins/jenkins
+sudo docker pull jenkins/jenkins:lts-jdk11
 
-sudo docker run -d --name jenkins-server -p 8091:8080 -p 50000:50000 -v $usrdir/jenkins_home:/var/jenkins_home  jenkins/jenkins;
+sudo docker run -d --name jenkins-server -p 8091:8080 -p 50000:50000 -v $usrdir/jenkins_home:/var/jenkins_home  jenkins/jenkins:lts-jdk11;
 
 
 
