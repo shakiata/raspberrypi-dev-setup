@@ -12,6 +12,11 @@ mylocalip=$(sudo ip addr show eth0 | grep "inet\b" | awk '{print $2}' | cut -d/ 
 # Run container
 docker-compose up --detach
 
+
+# installs unbound after pihole has been setup
+sudo docker exec -it pihole sudo apt update
+sudo docker exec -it pihole sudo apt install unbound -y
+
 echo
 echo
 echo ----------------- Pihole URLS---------------------------
