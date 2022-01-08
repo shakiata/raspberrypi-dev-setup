@@ -28,6 +28,7 @@ echo Local Addresse: "$mylocalip:8091/admin"
 echo
 # echo PiHole Admin Password:
 # sudo docker exec -it pihole sudo pihole -a -p
+# Set Custom DNS in PiHole - 127.0.0.1#5335
 echo
 echo -------------------------------------------------------------------
 echo
