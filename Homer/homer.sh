@@ -11,7 +11,7 @@ docker run -d \
 
 
 cp /home/james/raspberrypi-dev-setup/Homer/config.yml /home/homer/assets/config.yml
-cp /home/james/raspberrypi-dev-setup/Homer/branconet_assets /home/homer/assets/branconet_assets
+sudo cp -r /home/james/raspberrypi-dev-setup/Homer/branconet_assets /home/homer/assets/branconet_assets/
 
 
   echo Finished :8081
