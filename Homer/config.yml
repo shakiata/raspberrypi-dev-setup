@@ -72,7 +72,7 @@ links:
 # Leave only a "items" key if not using group (group name, icon & tagstyle are optional, section separation will not be displayed).
 services:
   - name: "Applications"
-    icon: "fas fa-cloud"
+    icon: "fas fa-chevron-right"
     items:
       - name: "PiHole"
         logo: "assets/branconet_assets/pihole.png"
@@ -95,7 +95,7 @@ services:
 
 
   - name: "Monitoring"
-    icon: "fas fa-cloud"
+    icon: "fab fa-watchman-monitoring"
     items:
       - name: "Glances Mini"
         logo: "assets/branconet_assets/glances.png"
@@ -129,19 +129,19 @@ services:
     icon: "fas fa-cloud"
     items:
       - name: "Reverse Proxy"
-        logo: "assets/branconet_assets/truenas.png"
+        logo: "assets/branconet_assets/nginx.png"
         subtitle: "WebServer hosted on PI"
         tag: "web"
         url: "http://192.168.0.19/"
     
       - name: "lucinda.branconet.com"
-        logo: "assets/branconet_assets/truenas.png"
+        logo: "assets/branconet_assets/nginx.png"
         subtitle: "WebServer hosted on PI"
         tag: "web"
         url: "http://192.168.0.19:8080/"
 
       - name: "santos.branconet.com"
-        logo: "assets/branconet_assets/truenas.png"
+        logo: "assets/branconet_assets/nginx.png"
         subtitle: "WebServer hosted on PI"
         tag: "web"
         url: "http://192.168.0.19:8081/"
