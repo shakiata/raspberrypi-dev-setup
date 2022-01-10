@@ -28,7 +28,7 @@ sudo docker pull nextcloud
     -v /home/nextcloud/nextcloud/data:/var/www/html/data \
     -v /home/nextcloud/nextcloud_files:/data \
     -p 8443:443 \
-    -p 8092:80 \
+    -p 80:80 \
     --name nextcloud \
     nextcloud \
 
