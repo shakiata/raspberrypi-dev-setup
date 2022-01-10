@@ -100,27 +100,48 @@ services:
       - name: "Glances Mini"
         logo: "assets/branconet_assets/glances.png"
         subtitle: "Glances hosted on MINI"
-        tag: "app"
+        tag: "Monitoring"
         url: "http://192.168.0.21:8093/"
     
       - name: "Glances PI"
         logo: "assets/branconet_assets/glances.png"
         subtitle: "Glances hosted on PI"
-        tag: "app"
+        tag: "Monitoring"
         url: "http://192.168.0.19:8093/"
 
 
   - name: "Storage and Media"
-    icon: "fas fa-cloud"
+    icon: "fas fa-hdd"
     items:
       - name: "trueNAS"
         logo: "assets/branconet_assets/truenas.png"
         subtitle: "trueNAS OS"
-        tag: "app"
+        tag: "Storage"
         url: "http://truenas.home/"
     
       - name: "Plex"
         logo: "assets/branconet_assets/plex.png"
         subtitle: "Plex hosted on PI"
-        tag: "app"
+        tag: "Media"
         url: "http://192.168.0.19:32400/manage"
+
+  - name: "Web Servers"
+    icon: "fas fa-cloud"
+    items:
+      - name: "Reverse Proxy"
+        logo: "assets/branconet_assets/truenas.png"
+        subtitle: "WebServer hosted on PI"
+        tag: "web"
+        url: "http://192.168.0.19/"
+    
+      - name: "lucinda.branconet.com"
+        logo: "assets/branconet_assets/truenas.png"
+        subtitle: "WebServer hosted on PI"
+        tag: "web"
+        url: "http://192.168.0.19:8080/"
+
+      - name: "santos.branconet.com"
+        logo: "assets/branconet_assets/truenas.png"
+        subtitle: "WebServer hosted on PI"
+        tag: "web"
+        url: "http://192.168.0.19:8081/"
