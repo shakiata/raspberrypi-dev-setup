@@ -158,3 +158,18 @@ services:
         subtitle: "WebServer hosted on PI"
         tag: "web"
         url: "http://192.168.0.19:8081/"
+
+  - name: "Utilities"
+    icon: "fas fa-cloud"
+    items:
+      - name: "Vault Warden"
+        logo: "assets/branconet_assets/nginx.png"
+        subtitle: "Password Keeper hosted on MINI"
+        tag: "Security"
+        url: "http://vault.box:8092/"
+    
+      - name: "File Browser"
+        logo: "assets/branconet_assets/nginx.png"
+        subtitle: "File Browser hosted on MEDIA"
+        tag: "ftp"
+        url: "http://files.box:8092/"
