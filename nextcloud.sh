@@ -15,7 +15,7 @@ mypublicip=$(curl https://ipinfo.io/ip)
 
 
 # remove old docker image if present
-sudo docker rm -f nextcloudpi
+sudo docker rm -f nextcloud
 # Pulls docker image
 sudo docker pull nextcloud
 # Runs Installs Docker image
@@ -33,7 +33,7 @@ sudo docker pull nextcloud
     nextcloud \
 
 #Set Nextcloud docker instance to restart automatic on system reboot
-sudo docker update --restart unless-stopped nextcloudpi
+sudo docker update --restart unless-stopped nextcloud
 
 
 echo
