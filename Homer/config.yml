@@ -90,12 +90,10 @@ services:
         tag: "app"
         url: "http://jenkins.box:8091/"
 
-      - name: "trueNAS"
-        logo: "assets/tools/sample2.png"
-        subtitle: "trueNAS OS"
-        tag: "app"
-        url: "http://truenas.home/"
-    
+
+  - name: "Monitoring"
+    icon: "fas fa-cloud"
+    items:
       - name: "Glances Mini"
         logo: "assets/tools/sample2.png"
         subtitle: "Glances hosted on MINI"
@@ -107,3 +105,19 @@ services:
         subtitle: "Glances hosted on PI"
         tag: "app"
         url: "http://192.168.0.19:8093/"
+
+
+  - name: "Storage and Media"
+    icon: "fas fa-cloud"
+    items:
+      - name: "trueNAS"
+        logo: "assets/tools/sample2.png"
+        subtitle: "trueNAS OS"
+        tag: "app"
+        url: "http://truenas.home/"
+    
+      - name: "Plex"
+        logo: "assets/tools/sample2.png"
+        subtitle: "Plex hosted on PI"
+        tag: "app"
+        url: "http://192.168.0.19:32400/manage"
