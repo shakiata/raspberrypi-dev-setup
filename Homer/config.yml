@@ -162,12 +162,6 @@ services:
   - name: "Utilities"
     icon: "fas fa-cloud"
     items:
-      - name: "Vault Warden"
-        logo: "assets/branconet_assets/nginx.png"
-        subtitle: "Password Keeper hosted on MINI"
-        tag: "Security"
-        url: "http://vault.box:8092/"
-    
       - name: "File Browser"
         logo: "assets/branconet_assets/nginx.png"
         subtitle: "File Browser hosted on MEDIA"

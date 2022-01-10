@@ -9,10 +9,10 @@ sudo pip3 install docker-compose
 # Create local IP variable and bind to show default local interface IP
 mylocalip=$(sudo ip addr show eth0 | grep "inet\b" | awk '{print $2}' | cut -d/ -f1)
 
-cd; sudo mkdir plex
+cd /home && sudo mkdir plex
 sudo chmod 777 plex
 cd plex
-sudo mkdir database; sudo mkdir transcode; sudo mkdir plexmedia; cd plexmedia; mkdir WD1TB
+sudo mkdir database; sudo mkdir transcode; sudo mkdir plexmedia; cd plexmedia
 cd
 
 # Pull/Run container
@@ -26,11 +26,11 @@ sudo docker run -d \
   -e PUID=1000 \
   -e PGID=1000 \
   -e VERSION=docker \
-  -v /media/james/pi-ssd/container-program-files/plex/database:/config \
-  -v /media/james/pi-ssd/container-program-files/plex/transcode:/transcode \
-  -v /media/james/pi-ssd/share_files/plex_files:/data \
+  -v /home/container-program-files/plex/database:/config \
+  -v /home/container-program-files/plex/transcode:/transcode \
+  -v /home/container-program-files/fileserver_share_files/plex_files:/data \
   -e TZ="America/Toronto" \
-  -e ADVERTISE_IP="http://192.168.0.29:32400/" \
+  -e ADVERTISE_IP="http://192.168.0.23:32400/" \
   --restart unless-stopped \
   linuxserver/plex
 
@@ -45,7 +45,7 @@ echo
 echo
 echo Finished!
 
-sudo mount /dev/sda1 /home/james/plex/plexmedia/WD1TB
+# sudo mount /dev/sda1 /home/james/plex/plexmedia/WD1TB
 
 sudo ufw allow 32400/tcp
 sudo ufw allow 32400/udp
