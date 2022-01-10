@@ -2,6 +2,7 @@ usrdir=$(eval echo ~$USER)
 
 
 docker run -d \
+  --name homer \
   -p 8081:8080 \
   -v /home/$USER/homer/assets/:/www/assets \
   --restart=always \
