@@ -109,6 +109,12 @@ services:
         tag: "Monitoring"
         url: "http://192.168.0.19:8093/"
 
+      - name: "Glances MEDIA"
+        logo: "assets/branconet_assets/glances.png"
+        subtitle: "Glances hosted on MEDIA"
+        tag: "Monitoring"
+        url: "http://192.168.0.23:8093/"
+
 
   - name: "Storage and Media"
     icon: "fas fa-hdd"
@@ -123,13 +129,13 @@ services:
         logo: "assets/branconet_assets/plex.png"
         subtitle: "Plex hosted on MEDIA"
         tag: "Media"
-        url: "http://192.168.0.19:32400/manage"
+        url: "http://192.168.0.23:32400/manage"
 
       - name: "Next Cloud"
         logo: "assets/branconet_assets/nextcloud.png"
         subtitle: "NextCloud hosted on MEDIA"
         tag: "Media"
-        url: "http://192.168.0.23:32400/manage"
+        url: "http://nextcloud.box"
 
 
   - name: "Web Servers"
