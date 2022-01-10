@@ -160,10 +160,10 @@ services:
         url: "http://192.168.0.19:8081/"
 
   - name: "Utilities"
-    icon: "fas fa-cloud"
+    icon: "fas fa-wrench"
     items:
       - name: "File Browser"
-        logo: "assets/branconet_assets/nginx.png"
+        logo: "assets/branconet_assets/filebrowser.png"
         subtitle: "File Browser hosted on MEDIA"
         tag: "ftp"
         url: "http://files.box:8092/"
