@@ -1,5 +1,6 @@
 usrdir=$(eval echo ~$USER)
 
+docker rm -f homer
 
 docker run -d \
   --name homer \
