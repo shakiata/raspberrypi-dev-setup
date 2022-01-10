@@ -76,20 +76,20 @@ services:
     icon: "fas fa-cloud"
     items:
       - name: "PiHole"
-        logo: "assets/tools/sample.png"
+        logo: "assets/branconet_assets/pihole.png"
         subtitle: "PiHole hosted on PI"
         tag: "app"
         url: "http://pihole.box:8091/admin/"
         target: "_blank" # optional html a tag target attribute
 
       - name: "Portainer"
-        logo: "assets/tools/sample2.png"
+        logo: "assets/branconet_assets/portainer.png"
         subtitle: "Protainer hosted on PI"
         tag: "app"
         url: "http://portainer.box:8090/"
 
       - name: "Jenkins"
-        logo: "assets/tools/sample2.png"
+        logo: "assets/branconet_assets/jenkins.png"
         subtitle: "Jenkins hosted on MINI"
         tag: "app"
         url: "http://jenkins.box:8091/"
@@ -99,13 +99,13 @@ services:
     icon: "fas fa-cloud"
     items:
       - name: "Glances Mini"
-        logo: "assets/tools/sample2.png"
+        logo: "assets/branconet_assets/glances.png"
         subtitle: "Glances hosted on MINI"
         tag: "app"
         url: "http://192.168.0.21:8093/"
     
       - name: "Glances PI"
-        logo: "assets/tools/sample2.png"
+        logo: "assets/branconet_assets/glances.png"
         subtitle: "Glances hosted on PI"
         tag: "app"
         url: "http://192.168.0.19:8093/"
@@ -115,13 +115,13 @@ services:
     icon: "fas fa-cloud"
     items:
       - name: "trueNAS"
-        logo: "assets/tools/sample2.png"
+        logo: "assets/branconet_assets/truenas.png"
         subtitle: "trueNAS OS"
         tag: "app"
         url: "http://truenas.home/"
     
       - name: "Plex"
-        logo: "assets/tools/sample2.png"
+        logo: "assets/branconet_assets/plex.png"
         subtitle: "Plex hosted on PI"
         tag: "app"
         url: "http://192.168.0.19:32400/manage"
