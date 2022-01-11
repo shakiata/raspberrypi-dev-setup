@@ -1,9 +1,9 @@
 #!bin/bash
 
-# Install Prerequisties
-echo Installing Prerequisties..
-echo Installing Docker...
-sudo apt install docker
+# # Install Prerequisties
+# echo Installing Prerequisties..
+# echo Installing Docker...
+# sudo apt install docker
 
 echo Installing IProute2 and creating local variables...
 sudo apt -y install iproute2

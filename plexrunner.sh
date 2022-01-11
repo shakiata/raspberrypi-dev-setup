@@ -9,7 +9,7 @@ sudo pip3 install docker-compose
 # Create local IP variable and bind to show default local interface IP
 mylocalip=$(sudo ip addr show eth0 | grep "inet\b" | awk '{print $2}' | cut -d/ -f1)
 
-cd /home && sudo mkdir plex
+cd /home/james/container-program-files/ && sudo mkdir plex
 sudo chmod 777 plex
 cd plex
 sudo mkdir database; sudo mkdir transcode; sudo mkdir plexmedia; cd plexmedia
