@@ -67,6 +67,14 @@ links:
     icon: "fas fa-question"
     url: "https://github.com/bastienwirtz/homer#getting-started"
 
+  - name: "Google Something"
+    icon: "fab fa-google"
+    url: "https://www.google.ca/"
+
+  - name: "Docker Hub"
+    icon: "fab fa-docker"
+    url: "https://hub.docker.com/search?type=image"
+
 # Services
 # First level array represent a group.
 # Leave only a "items" key if not using group (group name, icon & tagstyle are optional, section separation will not be displayed).
