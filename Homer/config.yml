@@ -63,10 +63,6 @@ links:
     icon: "fab fa-github"
     url: "https://github.com/jtmb/raspberrypi-dev-setup"
 
-  - name: "Help Wiki"
-    icon: "fas fa-question"
-    url: "https://github.com/bastienwirtz/homer#getting-started"
-
   - name: "Google Something"
     icon: "fab fa-google"
     url: "https://www.google.ca/"
@@ -74,6 +70,10 @@ links:
   - name: "Docker Hub"
     icon: "fab fa-docker"
     url: "https://hub.docker.com/search?type=image"
+
+  - name: "Help Wiki"
+    icon: "fas fa-question"
+    url: "https://github.com/bastienwirtz/homer#getting-started"
 
 # Services
 # First level array represent a group.
