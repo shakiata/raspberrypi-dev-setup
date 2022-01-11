@@ -22,11 +22,11 @@ sudo docker pull nextcloud
 # sudo docker run -d -p 4443:4443 -p 8443:443 -p 8092:80 -v /home/james/plex/plexmedia/nextcloud:/data --name nextcloudpi nextcloud $DOMAIN
 
  docker run -d \
-    -v /home/nextcloud/nextcloudroot:/var/www/html \
-    -v /home/nextcloud/nextcloud/apps:/var/www/html/custom_apps \
-    -v /home/nextcloud/nextcloud/config:/var/www/html/config \
-    -v /home/nextcloud/nextcloud/data:/var/www/html/data \
-    -v /home/nextcloud/nextcloud_files:/data \
+    -v /home/james/container-program-files/nextcloud/nextcloudroot:/var/www/html \
+    -v /home/james/container-program-files/nextcloud/nextcloud/apps:/var/www/html/custom_apps \
+    -v /home/james/container-program-files/nextcloud/nextcloud/config:/var/www/html/config \
+    -v /home/james/container-program-files/nextcloud/nextcloud/data:/var/www/html/data \
+    -v /home/james/container-program-files/nextcloud/nextcloud_files:/data \
     -p 8443:443 \
     -p 80:80 \
     --name nextcloud \
@@ -36,14 +36,4 @@ sudo docker pull nextcloud
 sudo docker update --restart unless-stopped nextcloud
 
 
-echo
-echo
-echo ----------------- Jenkins URLS---------------------------
-echo
-echo Local Addresses: "$mylocalip:8092" 
-echo Public Address:  "$mypublicip:8092"
-echo
-echo -------------------------------------------------------------------
-echo
-echo
 echo Finished!

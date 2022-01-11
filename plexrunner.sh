@@ -26,9 +26,9 @@ sudo docker run -d \
   -e PUID=1000 \
   -e PGID=1000 \
   -e VERSION=docker \
-  -v /home/container-program-files/plex/database:/config \
-  -v /home/container-program-files/plex/transcode:/transcode \
-  -v /home/container-program-files/fileserver_share_files/plex_files:/data \
+  -v /home/james/container-program-files/plex/database:/config \
+  -v /home/james/container-program-files/plex/transcode:/transcode \
+  -v /home/james/container-program-files/fileserver_share_files/plex_files:/data \
   -e TZ="America/Toronto" \
   -e ADVERTISE_IP="http://192.168.0.23:32400/" \
   --restart unless-stopped \
