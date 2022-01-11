@@ -4,6 +4,7 @@ sudo docker rm -f fileserver
 
 docker pull filebrowser/filebrowser
 
+mkdir /home/james/container-program-files/fileserver/
 touch /home/james/container-program-files/fileserver/database.db
 touch /home/james/container-program-files/fileserver/filebrowser.json
 
