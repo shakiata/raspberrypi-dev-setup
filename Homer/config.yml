@@ -37,8 +37,7 @@ colors:
     text-title: "#fafafa"
     text-subtitle: "#f5f5f5"
     card-shadow: rgba(0, 0, 0, 0.4)
-    # link: "#3273dc"
-    link: "#e79e19"
+    link: "#3273dc"
     link-hover: "#ffdd57"
 
 # Optional message

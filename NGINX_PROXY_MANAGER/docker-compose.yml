@@ -1,0 +1,13 @@
+version: '3'
+services:
+  app:
+    image: 'jc21/nginx-proxy-manager:latest'
+    container_name: proxyserver
+    restart: unless-stopped
+    ports:
+      - '80:80'
+      - '81:81'
+      - '443:443'
+    volumes:
+      - /home/james/container-program-files/NGINX_PROXY_MANAGER/data:/data
+      - /home/james/container-program-files/NGINX_PROXY_MANAGER/letsencrypt:/etc/letsencrypt
