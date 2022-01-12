@@ -37,7 +37,8 @@ colors:
     text-title: "#fafafa"
     text-subtitle: "#f5f5f5"
     card-shadow: rgba(0, 0, 0, 0.4)
-    link: "#3273dc"
+    # link: "#3273dc"
+    link: "#e79e19"
     link-hover: "#ffdd57"
 
 # Optional message
@@ -71,8 +72,12 @@ links:
     icon: "fab fa-docker"
     url: "https://hub.docker.com/search?type=image"
 
+  - name: "Self Hosted Subreddit"
+    icon: "fab fa-docker"
+    url: "https://old.reddit.com/r/selfhosted/"
+
   - name: "Help Wiki"
-    icon: "fas fa-question"
+    icon: "fab fa-reddit"
     url: "https://github.com/bastienwirtz/homer#getting-started"
 
 # Services
