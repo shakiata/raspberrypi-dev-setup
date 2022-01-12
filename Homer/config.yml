@@ -73,11 +73,11 @@ links:
     url: "https://hub.docker.com/search?type=image"
 
   - name: "Self Hosted Subreddit"
-    icon: "fab fa-docker"
+    icon: "fab fa-reddit"
     url: "https://old.reddit.com/r/selfhosted/"
 
   - name: "Help Wiki"
-    icon: "fab fa-reddit"
+    icon: "far fa-question-circle"
     url: "https://github.com/bastienwirtz/homer#getting-started"
 
 # Services
