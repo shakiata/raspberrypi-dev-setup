@@ -20,6 +20,9 @@ sudo docker exec -it pihole sudo apt update
 sudo docker exec -it pihole sudo apt install unbound -y
 sudo cp $usrdir/raspberrypi-dev-setup/PiHole/pi-hole.conf $usrdir/unbound.d/pi-hole.conf
 
+#Set pihole docker instance to restart automatic on system reboot
+sudo docker update --restart unless-stopped pihole
+
 echo
 echo
 echo ----------------- Pihole URLS---------------------------
