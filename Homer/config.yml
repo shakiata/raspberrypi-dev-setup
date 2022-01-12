@@ -158,8 +158,8 @@ services:
     icon: "fas fa-cloud"
     items:
       - name: "Reverse Proxy"
-        logo: "assets/branconet_assets/nginx.png"
-        subtitle: "WebServer hosted on PI"
+        logo: "assets/branconet_assets/nginxm.png"
+        subtitle: "Nginx Proxy Manager"
         tag: "web"
         url: "http://192.168.0.19:81/"
     
