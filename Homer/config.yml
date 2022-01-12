@@ -75,6 +75,10 @@ links:
     icon: "fab fa-reddit"
     url: "https://old.reddit.com/r/selfhosted/"
 
+  - name: "Self Hosted Github"
+    icon: "fab fa-github"
+    url: "https://github.com/awesome-selfhosted/awesome-selfhosted"
+
   - name: "Help Wiki"
     icon: "far fa-question-circle"
     url: "https://github.com/bastienwirtz/homer#getting-started"
