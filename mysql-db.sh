@@ -10,7 +10,7 @@ sudo docker run -d \
   --name=mariadb \
   -e PUID=1000 \
   -e PGID=1000 \
-  -e MYSQL_ROOT_PASSWORD=8108453500! \
+  -e MYSQL_ROOT_PASSWORD=passhere! \
   -e TZ=America/Toronto \
   -p 8094:3306 \
   -v /home/james/container-program-files/mariadb:/var/lib/mysql \

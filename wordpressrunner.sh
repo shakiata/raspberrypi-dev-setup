@@ -8,7 +8,7 @@ docker rm -f wordpress
 
 docker pull wordpress
 
-docker run --name wordpress -v /media/pi/pi-ssd/container-program-files/wordpress_data:/var/www/html -p 8096:80 -d wordpress
+docker run --name wordpress -v /home/james/container-program-files/wordpress_data:/var/www/html -p 8096:80 -d wordpress
 
 sudo docker update --restart unless-stopped wordpress
 
