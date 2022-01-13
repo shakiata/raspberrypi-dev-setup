@@ -62,6 +62,7 @@ links:
   - name: "JTMB Github"
     icon: "fab fa-github"
     url: "https://github.com/jtmb/raspberrypi-dev-setup"
+    target: "deez nutz"
 
   - name: "Google Something"
     icon: "fab fa-google"
