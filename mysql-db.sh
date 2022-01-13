@@ -13,15 +13,14 @@ sudo docker run -d \
   -e MYSQL_ROOT_PASSWORD=8108453500! \
   -e TZ=America/Toronto \
   -p 8094:3306 \
-  -v /media/james/pi-ssd/container-program-files/mariadb:/var/lib/mysql \
-  --restart unless-stopped \
+  -v /home/james/container-program-files/mariadb:/var/lib/mysql \
   ghcr.io/linuxserver/mariadb
 
 echo
 echo
 echo ----------------- Wordpress URLS---------------------------
 echo
-echo Local Address: "$mylocalip:8091" or "localhost:8091"
+echo Local Address: "<mylocalip>:8094" or "localhost:8094"
 echo
 echo -------------------------------------------------------------------
 echo
