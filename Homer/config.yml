@@ -152,7 +152,7 @@ services:
         logo: "assets/branconet_assets/nextcloud.png"
         subtitle: "NextCloud hosted on MEDIA"
         tag: "Media"
-        url: "http://nextcloud.box"
+        url: "https://cloud.branconet.com"
 
 
   - name: "Web Servers"
@@ -168,13 +168,13 @@ services:
         logo: "assets/branconet_assets/nginx.png"
         subtitle: "WebServer hosted on PI"
         tag: "web"
-        url: "http://192.168.0.19:8080/"
+        url: "lucinda.branconet.com"
 
       - name: "santos.branconet.com"
         logo: "assets/branconet_assets/nginx.png"
         subtitle: "WebServer hosted on PI"
         tag: "web"
-        url: "http://192.168.0.19:8081/"
+        url: "santos.branconet.com"
 
   - name: "Utilities"
     icon: "fas fa-wrench"
