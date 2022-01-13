@@ -168,13 +168,13 @@ services:
         logo: "assets/branconet_assets/nginx.png"
         subtitle: "WebServer hosted on PI"
         tag: "web"
-        url: "lucinda.branconet.com"
+        url: "https://lucinda.branconet.com"
 
       - name: "santos.branconet.com"
         logo: "assets/branconet_assets/nginx.png"
         subtitle: "WebServer hosted on PI"
         tag: "web"
-        url: "santos.branconet.com"
+        url: "https://santos.branconet.com"
 
   - name: "Utilities"
     icon: "fas fa-wrench"
