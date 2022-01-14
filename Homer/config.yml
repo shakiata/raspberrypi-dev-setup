@@ -94,10 +94,10 @@ services:
       - name: "PiHole"
         # type: Ping
         logo: "assets/branconet_assets/pihole.svg"
-        subtitle: "PiHole hosted on PI"
+        # subtitle: "PiHole hosted on PI"
         tag: "192.168.0.19:8091"
         url: "http://pihole.box:8091/admin/"
-        target: "_blank" # optional html a tag target attribute
+        type: "PiHole"
 
       - name: "Portainer"
         # type: Ping
