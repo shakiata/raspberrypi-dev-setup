@@ -1,6 +1,6 @@
 #!bin/bash
 
-sudo rm -rfv /home/james/container-program-files/branconet.com
+# sudo rm -rfv /home/james/container-program-files/branconet.com
 
 sudo docker-compose up -d
 
