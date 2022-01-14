@@ -94,20 +94,20 @@ services:
       - name: "PiHole"
         logo: "assets/branconet_assets/pihole.png"
         subtitle: "PiHole hosted on PI"
-        tag: "app"
+        tag: "192.168.0.19:8091"
         url: "http://pihole.box:8091/admin/"
         target: "_blank" # optional html a tag target attribute
 
       - name: "Portainer"
         logo: "assets/branconet_assets/portainer.png"
         subtitle: "Protainer hosted on PI"
-        tag: "app"
+        tag: "192.168.0.19:8090"
         url: "http://portainer.box:8090/"
 
       - name: "Jenkins"
         logo: "assets/branconet_assets/jenkins.png"
         subtitle: "Jenkins hosted on MINI"
-        tag: "app"
+        tag: "192.168.0.21:8091"
         url: "http://jenkins.box:8091/"
 
 
@@ -117,19 +117,19 @@ services:
       - name: "Glances Mini"
         logo: "assets/branconet_assets/glances.png"
         subtitle: "Glances hosted on MINI"
-        tag: "Monitoring"
+        tag: "192.168.0.21:8093"
         url: "http://192.168.0.21:8093/"
     
       - name: "Glances PI"
         logo: "assets/branconet_assets/glances.png"
         subtitle: "Glances hosted on PI"
-        tag: "Monitoring"
+        tag: "192.168.0.19:8093"
         url: "http://192.168.0.19:8093/"
 
       - name: "Glances MEDIA"
         logo: "assets/branconet_assets/glances.png"
         subtitle: "Glances hosted on MEDIA"
-        tag: "Monitoring"
+        tag: "192.168.0.23:8093"
         url: "http://192.168.0.23:8093/"
 
 
@@ -139,19 +139,19 @@ services:
       - name: "trueNAS"
         logo: "assets/branconet_assets/truenas.png"
         subtitle: "trueNAS OS"
-        tag: "Storage"
+        tag: "192.168.0.25"
         url: "http://truenas.home/"
     
       - name: "Plex"
         logo: "assets/branconet_assets/plex.png"
         subtitle: "Plex hosted on MEDIA"
-        tag: "Media"
+        tag: "192.168.0.23:32400/manage"
         url: "http://192.168.0.23:32400/manage"
 
       - name: "Next Cloud"
         logo: "assets/branconet_assets/nextcloud.png"
         subtitle: "NextCloud hosted on MEDIA"
-        tag: "Media"
+        tag: "192.168.0.23"
         url: "https://cloud.branconet.com"
 
 
@@ -161,19 +161,25 @@ services:
       - name: "Nginx Proxy Manager"
         logo: "assets/branconet_assets/nginxm.png"
         subtitle: "Reverse proxy"
-        tag: "web"
-        url: "http://192.168.0.19:81/"
+        tag: "192.168.0.19:81"
+        url: "http://proxy.box:81/"
     
+      - name: "branconet.com"
+        logo: "assets/branconet_assets/nginx.png"
+        subtitle: "WebServer hosted on PI"
+        tag: "192.168.0.19:8080"
+        url: "https://branconet.com"
+
       - name: "lucinda.branconet.com"
         logo: "assets/branconet_assets/nginx.png"
         subtitle: "WebServer hosted on PI"
-        tag: "web"
+        tag: "192.168.0.221:8081 (remote)"
         url: "https://lucinda.branconet.com"
 
       - name: "santos.branconet.com"
         logo: "assets/branconet_assets/nginx.png"
         subtitle: "WebServer hosted on PI"
-        tag: "web"
+        tag: "192.168.0.221:8082 (remote)"
         url: "https://santos.branconet.com"
 
   - name: "Utilities"
@@ -182,5 +188,5 @@ services:
       - name: "File Browser"
         logo: "assets/branconet_assets/filebrowser.png"
         subtitle: "File Browser hosted on MEDIA"
-        tag: "ftp"
+        tag: "192.168.0.23:8092"
         url: "http://files.box:8092/"
