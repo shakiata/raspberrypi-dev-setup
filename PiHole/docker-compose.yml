@@ -14,9 +14,9 @@ services:
       TZ: 'America/Toronto'
     # Volumes store your data between container upgrades
     volumes:
-      - '/home/james/pihole/:/etc/pihole/'
-      - '/home/james/dnsmasq.d/:/etc/dnsmasq.d/'
-      - '/home/james/unbound.d/:/etc/unbound/'
+      - '/home/james/container-program-files/pihole/:/etc/pihole/'
+      - '/home/james/container-program-files/dnsmasq.d/:/etc/dnsmasq.d/'
+      - '/home/james/container-program-files/unbound.d/:/etc/unbound/'
     # Recommended but not required (DHCP needs NET_ADMIN)
     #   https://github.com/pi-hole/docker-pi-hole#note-on-capabilities
     cap_add:
