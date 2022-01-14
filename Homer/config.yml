@@ -190,3 +190,9 @@ services:
         subtitle: "File Browser hosted on MEDIA"
         tag: "192.168.0.23:8092"
         url: "http://files.box:8092/"
+  
+      - name: "NETGEAR XR500 G Router"
+        logo: "assets/branconet_assets/filebrowser.png"
+        subtitle: "DUMA OS Router"
+        tag: "192.168.0.1"
+        url: "http://192.168.0.1"
