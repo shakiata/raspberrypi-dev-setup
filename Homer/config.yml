@@ -164,21 +164,21 @@ services:
     items:
     
       - name: "branconet.com"
-        type: Ping
+        # type: Ping
         logo: "assets/branconet_assets/nginx.png"
         subtitle: "WebServer hosted on PI"
         tag: "192.168.0.19:8080"
         url: "https://branconet.com"
 
       - name: "lucinda.branconet.com"
-        type: Ping
+        # type: Ping
         logo: "assets/branconet_assets/nginx.png"
         subtitle: "WebServer hosted on PI"
         tag: "192.168.0.221:8081 (remote)"
         url: "https://lucinda.branconet.com"
 
       - name: "santos.branconet.com"
-        type: Ping
+        # type: Ping
         logo: "assets/branconet_assets/nginx.png"
         subtitle: "WebServer hosted on PI"
         tag: "192.168.0.221:8082 (remote)"
