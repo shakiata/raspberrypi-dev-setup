@@ -158,11 +158,6 @@ services:
   - name: "Web Servers"
     icon: "fas fa-cloud"
     items:
-      - name: "Nginx Proxy Manager"
-        logo: "assets/branconet_assets/nginxm.png"
-        subtitle: "Reverse proxy"
-        tag: "192.168.0.19:81"
-        url: "http://proxy.box:81/"
     
       - name: "branconet.com"
         logo: "assets/branconet_assets/nginx.png"
@@ -196,3 +191,9 @@ services:
         subtitle: "DUMA OS Router"
         tag: "192.168.0.1"
         url: "http://192.168.0.1"
+
+      - name: "Nginx Proxy Manager"
+        logo: "assets/branconet_assets/nginxm.png"
+        subtitle: "Reverse proxy"
+        tag: "192.168.0.19:81"
+        url: "http://proxy.box:81/"
