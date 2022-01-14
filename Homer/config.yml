@@ -92,6 +92,7 @@ services:
     icon: "fas fa-chevron-right"
     items:
       - name: "PiHole"
+        type: Ping
         logo: "assets/branconet_assets/pihole.svg"
         subtitle: "PiHole hosted on PI"
         tag: "192.168.0.19:8091"
@@ -99,12 +100,14 @@ services:
         target: "_blank" # optional html a tag target attribute
 
       - name: "Portainer"
+        type: Ping
         logo: "assets/branconet_assets/portainer.png"
         subtitle: "Protainer hosted on PI"
         tag: "192.168.0.19:8090"
         url: "http://portainer.box:8090/"
 
       - name: "Jenkins"
+        type: Ping
         logo: "assets/branconet_assets/jenkins.svg"
         subtitle: "Jenkins hosted on MINI"
         tag: "192.168.0.21:8091"
