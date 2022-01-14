@@ -99,7 +99,7 @@ services:
         target: "_blank" # optional html a tag target attribute
 
       - name: "Portainer"
-        logo: "assets/branconet_assets/portainer.png"
+        logo: "assets/branconet_assets/portainer.svg"
         subtitle: "Protainer hosted on PI"
         tag: "192.168.0.19:8090"
         url: "http://portainer.box:8090/"
