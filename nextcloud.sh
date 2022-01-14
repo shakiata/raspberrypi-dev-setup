@@ -35,5 +35,10 @@ sudo docker pull nextcloud
 #Set Nextcloud docker instance to restart automatic on system reboot
 sudo docker update --restart unless-stopped nextcloud
 
+# provision PHP
+
+sudo docker exec -it nextcloud RUN apt-get update && apt-get install -y libxml2-dev && docker-php-ext-install soap
+
+
 
 echo Finished!

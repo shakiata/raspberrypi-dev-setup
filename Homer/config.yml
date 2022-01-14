@@ -205,3 +205,15 @@ services:
         subtitle: "DUMA OS Router"
         tag: "192.168.0.1"
         url: "http://192.168.0.1"
+
+  - name: "Databases"
+    icon: "fas fa-database"
+    items:
+
+      - name: "SQL DB"
+        logo: "assets/branconet_assets/mariadb.png"
+        subtitle: "MariaDB Sql server"
+        tag: "192.168.0.23:8095"
+        url: "http://sql.box:8095/"
+
+
