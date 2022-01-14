@@ -216,4 +216,10 @@ services:
         tag: "192.168.0.23:8095"
         url: "http://sql.box:8095/"
 
+      - name: "Vault Warden"
+        logo: "assets/branconet_assets/bitwarden.svg"
+        subtitle: "BitWarden server"
+        tag: "192.168.0.23:8096"
+        url: "https://vault.branconet.com/"
+
 
