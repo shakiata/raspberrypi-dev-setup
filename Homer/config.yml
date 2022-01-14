@@ -92,7 +92,7 @@ services:
     icon: "fas fa-chevron-right"
     items:
       - name: "PiHole"
-        type: Ping
+        # type: Ping
         logo: "assets/branconet_assets/pihole.svg"
         subtitle: "PiHole hosted on PI"
         tag: "192.168.0.19:8091"
@@ -100,14 +100,14 @@ services:
         target: "_blank" # optional html a tag target attribute
 
       - name: "Portainer"
-        type: Ping
+        # type: Ping
         logo: "assets/branconet_assets/portainer.png"
         subtitle: "Protainer hosted on PI"
         tag: "192.168.0.19:8090"
         url: "http://portainer.box:8090/"
 
       - name: "Jenkins"
-        type: Ping
+        # type: Ping
         logo: "assets/branconet_assets/jenkins.svg"
         subtitle: "Jenkins hosted on MINI"
         tag: "192.168.0.21:8091"
@@ -152,6 +152,7 @@ services:
         url: "http://192.168.0.23:32400/manage"
 
       - name: "Next Cloud"
+        type: Ping
         logo: "assets/branconet_assets/nextcloud.png"
         subtitle: "NextCloud hosted on MEDIA"
         tag: "192.168.0.23"
@@ -163,18 +164,21 @@ services:
     items:
     
       - name: "branconet.com"
+        type: Ping
         logo: "assets/branconet_assets/nginx.png"
         subtitle: "WebServer hosted on PI"
         tag: "192.168.0.19:8080"
         url: "https://branconet.com"
 
       - name: "lucinda.branconet.com"
+        type: Ping
         logo: "assets/branconet_assets/nginx.png"
         subtitle: "WebServer hosted on PI"
         tag: "192.168.0.221:8081 (remote)"
         url: "https://lucinda.branconet.com"
 
       - name: "santos.branconet.com"
+        type: Ping
         logo: "assets/branconet_assets/nginx.png"
         subtitle: "WebServer hosted on PI"
         tag: "192.168.0.221:8082 (remote)"
