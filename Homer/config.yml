@@ -211,7 +211,7 @@ services:
     items:
 
       - name: "SQL DB"
-        logo: "assets/branconet_assets/mariadb.png"
+        logo: "assets/branconet_assets/mariadb.svg"
         subtitle: "MariaDB Sql server"
         tag: "192.168.0.23:8095"
         url: "http://sql.box:8095/"
