@@ -92,7 +92,7 @@ services:
     icon: "fas fa-chevron-right"
     items:
       - name: "PiHole"
-        logo: "assets/branconet_assets/pihole.png"
+        logo: "assets/branconet_assets/pihole.svg"
         subtitle: "PiHole hosted on PI"
         tag: "192.168.0.19:8091"
         url: "http://pihole.box:8091/admin/"
@@ -186,7 +186,7 @@ services:
         subtitle: "Reverse proxy"
         tag: "192.168.0.19:81"
         url: "http://proxy.box:81/"
-        
+
       - name: "File Browser"
         logo: "assets/branconet_assets/filebrowser.png"
         subtitle: "File Browser hosted on MEDIA"
