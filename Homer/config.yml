@@ -72,9 +72,9 @@ links:
     icon: "fab fa-docker"
     url: "https://hub.docker.com/search?type=image"
 
-  - name: "Self Hosted Subreddit"
-    icon: "fab fa-reddit"
-    url: "https://old.reddit.com/r/selfhosted/"
+  - name: "name.com"
+    icon: "fas fa-signature"
+    url: "https://www.name.com/account/domain/details/branconet.com"
 
   - name: "Self Hosted Github"
     icon: "fab fa-github"
