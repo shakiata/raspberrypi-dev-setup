@@ -105,7 +105,7 @@ services:
         url: "http://portainer.box:8090/"
 
       - name: "Jenkins"
-        logo: "assets/branconet_assets/jenkins.png"
+        logo: "assets/branconet_assets/jenkins.svg"
         subtitle: "Jenkins hosted on MINI"
         tag: "192.168.0.21:8091"
         url: "http://jenkins.box:8091/"
