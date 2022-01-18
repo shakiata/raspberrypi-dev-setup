@@ -202,7 +202,7 @@ services:
         tag: "192.168.0.1"
         url: "http://192.168.0.1"
 
-  - name: "Databases"
+  - name: "Databases and Sites"
     icon: "fas fa-database"
     items:
 
@@ -217,5 +217,11 @@ services:
         subtitle: "BitWarden server"
         tag: "192.168.0.23:8096"
         url: "https://vault.branconet.com/"
+
+      - name: "Ghost Blog"
+        logo: "assets/branconet_assets/Ghost-Logo.png"
+        subtitle: "Ghost Blog"
+        tag: "192.168.0.23:8081"
+        url: "https://blog.branconet.com/ghost"
 
 
