@@ -206,9 +206,9 @@ services:
     icon: "fas fa-database"
     items:
 
-      - name: "Ghost Blog"
+      - name: "J;s Blog"
         logo: "assets/branconet_assets/Ghost-Logo.png"
-        subtitle: "Ghost Blog"
+        subtitle: "Hosted with Ghost Blog on MEDIA"
         tag: "192.168.0.23:8081"
         url: "https://blog.branconet.com/ghost"
 
