@@ -206,6 +206,12 @@ services:
     icon: "fas fa-database"
     items:
 
+      - name: "Ghost Blog"
+        logo: "assets/branconet_assets/Ghost-Logo.png"
+        subtitle: "Ghost Blog"
+        tag: "192.168.0.23:8081"
+        url: "https://blog.branconet.com/ghost"
+
       - name: "SQL DB"
         logo: "assets/branconet_assets/mariadb.svg"
         subtitle: "MariaDB Sql server"
@@ -218,10 +224,6 @@ services:
         tag: "192.168.0.23:8096"
         url: "https://vault.branconet.com/"
 
-      - name: "Ghost Blog"
-        logo: "assets/branconet_assets/Ghost-Logo.png"
-        subtitle: "Ghost Blog"
-        tag: "192.168.0.23:8081"
-        url: "https://blog.branconet.com/ghost"
+
 
 
