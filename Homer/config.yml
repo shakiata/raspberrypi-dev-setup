@@ -92,15 +92,14 @@ services:
     icon: "fas fa-chevron-right"
     items:
       - name: "PiHole"
-        # type: Ping
+        type: Ping
         logo: "assets/branconet_assets/pihole.svg"
         subtitle: "PiHole hosted on PI"
         tag: "192.168.0.19:8091"
         url: "http://pihole.box:8091/admin/"
-        type: "PiHole"
 
       - name: "Portainer"
-        # type: Ping
+        type: Ping
         logo: "assets/branconet_assets/portainer.png"
         subtitle: "Protainer hosted on PI"
         tag: "192.168.0.19:8090"
@@ -118,6 +117,7 @@ services:
     icon: "fab fa-watchman-monitoring"
     items:
       - name: "Glances Mini"
+        type: Ping
         logo: "assets/branconet_assets/glances.png"
         subtitle: "Glances hosted on MINI"
         tag: "192.168.0.21:8093"
