@@ -8,7 +8,7 @@ mylocalip=$(sudo ip addr show eth0 | grep "inet\b" | awk '{print $2}' | cut -d/ 
 echo /////////////////////
 echo Stoping Containers...
 echo /////////////////////
-docker kill $(docker ps -q)
+# docker kill $(docker ps -q)
 
    
 # Pulls images and Runs Containers and updates them
