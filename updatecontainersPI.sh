@@ -18,21 +18,17 @@ cd NGINX
 cd Proxy
 bash runner.sh
 cd ..
-cd Webserver
+cd branconet.com
 bash runner.sh
-cd ..
-cd Webserver2
-bash runner.sh
-cd .. 
 cd ..
 cd PiHole
 bash pirunner.sh
 cd ..
-bash fileserver.sh
+cd Homer
+sudo bash homer.sh
+cd ..
 bash glancesrunner.sh
-bash plexrunner.sh
-
-docker scan $(docker images -q)
+bash endlessh.sh
 
 echo /////////////////////
 echo Images Updated... Starting Containers.
@@ -44,11 +40,5 @@ docker start $(docker ps -a -q)
 echo /////////////////////
 echo Local IPs Bellow:
 echo /////////////////////
-
-echo Plex: "$localip:32400"
-echo Protainer: "localip:8090"
-echo PI: "$localip:8091"
-echo Webserver: "$localip"
-echo Fileserver: "$localip:8092"
 
 echo UPDATE COMPLETE. Containers Rebuilt.

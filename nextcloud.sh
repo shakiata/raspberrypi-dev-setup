@@ -34,6 +34,7 @@ sudo docker pull nextcloud
 
 #Set Nextcloud docker instance to restart automatic on system reboot
 sudo docker update --restart unless-stopped nextcloud
+sudo docker exec -it nextcloud apt update && apt install fail2ban -y
 
 # provision PHP
 

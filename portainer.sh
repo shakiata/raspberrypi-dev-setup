@@ -22,6 +22,7 @@ sudo docker volume create portainer_data
 docker run -d -p 8000:8000 -p 8090:9000 --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce
 
 sudo docker update --restart unless-stopped portainer
+sudo docker exec -it ws1-portainer apt update && apt install fail2ban -y
 
 echo
 echo

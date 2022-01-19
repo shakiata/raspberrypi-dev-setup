@@ -60,6 +60,9 @@ sudo docker start jenkins-server
 #Set Jebkins docker instance to restart automatic on system reboot
 sudo docker update --restart unless-stopped jenkins-server
 
+sudo docker exec -it jenkins-server apt update && apt install fail2ban -y
+
+
 
 
 

@@ -16,4 +16,7 @@ sudo rm -rfv /home/homer/assets/branconet_assets/
 sudo cp -r /home/james/raspberrypi-dev-setup/Homer/branconet_assets /home/homer/assets/branconet_assets/
 
 
+sudo docker exec -it ws1-branconet.com apt update && apt install fail2ban -y
+
+
   echo Finished $ip:8081 or homer.box:8091

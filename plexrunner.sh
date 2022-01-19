@@ -34,6 +34,8 @@ sudo docker run -d \
   --restart unless-stopped \
   linuxserver/plex
 
+sudo docker exec -it plex apt update && apt install fail2ban -y
+
 echo
 echo
 echo ----------------- Plex URLS---------------------------
