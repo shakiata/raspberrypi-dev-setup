@@ -6,6 +6,8 @@ cd /home/james/container-program-files/ && git clone https://github.com/jtmb/bra
 
 sudo docker restart ws1-branconet.com
 
+sudo docker exec -it ws1-branconet.com apt update && apt install fail2ban -y
+
 cd 
 echo
 echo

@@ -15,11 +15,14 @@ docker kill $(docker ps -q)
 echo /////////////////////
 echo Pulling Images...
 echo /////////////////////
-# bash jenkinsrunner.sh
+bash vaultwarden.sh
+bash fileserver.sh
+bash ghost.sh
+bash nextcloud.sh
 bash glancesrunner.sh
 bash portaineragent.sh
 bash endlessh.sh
-bash protaineragent.sh
+bash plex.sh
 
 echo /////////////////////
 echo Images Updated... Starting Containers.
