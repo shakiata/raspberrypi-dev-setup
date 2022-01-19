@@ -14,12 +14,13 @@ docker kill $(docker ps -q)
 echo /////////////////////
 echo Pulling Images...
 echo /////////////////////
-cd NGINX
-cd Proxy
+cd NGINX_PROXY_MANAGER
 bash runner.sh
 cd ..
+cd NGINX
 cd branconet.com
 bash runner.sh
+cd ..
 cd ..
 cd PiHole
 bash pirunner.sh
