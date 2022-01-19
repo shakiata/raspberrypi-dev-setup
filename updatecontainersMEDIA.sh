@@ -8,8 +8,7 @@ mylocalip=$(sudo ip addr show eth0 | grep "inet\b" | awk '{print $2}' | cut -d/ 
 echo /////////////////////
 echo Stoping Containers...
 echo /////////////////////
-docker stop glances-sys-monitor
-docker stop portainer_agent
+docker kill $(docker ps -q)
 
    
 # Pulls images and Runs Containers and updates them
@@ -18,14 +17,19 @@ echo Pulling Images...
 echo /////////////////////
 bash glancesrunner.sh
 bash portaineragent.sh
+bash ghost.sh
+bash nextcloud.sh
+bash plex.sh
+bash endlessh.sh
+bash fileserver.sh
+
 
 echo /////////////////////
 echo Images Updated... Starting Containers.
 echo /////////////////////
 
 #Starts all Containers
-sudo docker start portainer_agent
-sudo docker start glances-sys-monitor
+docker start $(docker ps -a -q)
 
 echo /////////////////////
 echo Local IPs Bellow:
