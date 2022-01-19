@@ -98,7 +98,6 @@ services:
         url: "http://pihole.box:8091/admin/"
 
       - name: "Portainer"
-        type: Ping
         logo: "assets/branconet_assets/portainer.png"
         subtitle: "Protainer hosted on PI"
         tag: "192.168.0.19:8090"
