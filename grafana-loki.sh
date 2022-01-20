@@ -1,4 +1,5 @@
 mkdir /home/james/container-program-files/grafana/loki-config
+mkdir /home/james/container-program-files/grafana/prom-config
 
 wget https://raw.githubusercontent.com/grafana/loki/v2.4.2/cmd/loki/loki-local-config.yaml -O /home/james/container-program-files/grafana/loki-config/loki-config.yaml
 
