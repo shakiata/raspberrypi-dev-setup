@@ -1,3 +1,7 @@
+docker rm -f promtail
+docker rm -f loki
+
+
 mkdir /home/james/container-program-files/grafana/loki-config
 mkdir /home/james/container-program-files/grafana/prom-config
 
