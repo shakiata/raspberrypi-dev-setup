@@ -1,4 +1,5 @@
-<<<<<<< HEAD
+docker rm -f endlessh
+
 docker run -d \
   --name=endlessh \
   -e PUID=1000 \
@@ -10,16 +11,6 @@ docker run -d \
   -e LOGFILE=false `#optional` \
   -e BINDFAMILY= `#optional` \
   -p 22:2222 \
-  -v /path/to/appdata:/config `#optional` \
+  -v /home/james/container-program-files/endlessh:/config `#optional` \
   --restart unless-stopped \
   lscr.io/linuxserver/endlessh
-=======
-docker container run -d -v /home/james/container-program-files/endlessh:/endlessh --name endlessh -p 22:2222 \
-harshavardhanj/endlessh:alpine
-sudo docker update --restart unless-stopped endlessh
-sudo docker exec -it endlessh apk update && apk add fail2ban -y
-
-
-
-echo endlessh running
->>>>>>> f6da0ed47d425737deddba1982a3060084828b83
