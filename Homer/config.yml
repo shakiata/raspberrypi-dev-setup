@@ -213,7 +213,7 @@ services:
 
       - name: "Grafana"
         logo: "assets/branconet_assets/grafana_icon.svg"
-        subtitle: "Grafana / Promethous Monitoring"
+        subtitle: "Prometheus/Loki logs & DB Monitoring"
         tag: "192.168.0.19:3000"
         url: "http://grafana.box:3000/"
 
