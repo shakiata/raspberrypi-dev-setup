@@ -211,11 +211,11 @@ services:
         tag: "192.168.0.23:8081"
         url: "https://blog.branconet.com/ghost"
 
-      # - name: "SQL DB"
-      #   logo: "assets/branconet_assets/mariadb.svg"
-      #   subtitle: "MariaDB Sql server"
-      #   tag: "192.168.0.23:8095"
-      #   url: "http://sql.box:8095/"
+      - name: "Grafana"
+        logo: "assets/branconet_assets/grafana_icon.svg"
+        subtitle: "Grafana / Promethous Monitoring"
+        tag: "192.168.0.19:3000"
+        url: "http://grafana.box:3000/"
 
       - name: "Vault Warden"
         logo: "assets/branconet_assets/Bitwarden_logo.png"
