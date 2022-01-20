@@ -201,7 +201,7 @@ services:
         tag: "192.168.0.1"
         url: "http://192.168.0.1"
 
-  - name: "Databases and Sites"
+  - name: "Databases"
     icon: "fas fa-database"
     items:
 
