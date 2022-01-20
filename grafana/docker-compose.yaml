@@ -8,7 +8,7 @@ services:
     image: grafana/loki:2.4.1
     ports:
       - "3100:3100"
-    command: -config.file=/home/james/container-program-files/loki/local-config.yaml
+    command: -config.file=/etc/loki/local-config.yaml
     networks:
       - loki
 
@@ -16,7 +16,7 @@ services:
     image: grafana/promtail:2.4.1
     volumes:
       - /var/log:/var/log
-    command: -config.file=/home/james/container-program-files/promtail/config.yml
+    command: -config.file=/etc/promtail/config.yml
     networks:
       - loki
 
