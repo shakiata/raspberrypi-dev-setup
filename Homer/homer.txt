@@ -1,0 +1,13 @@
+docker rm -f homer
+
+docker run -d \
+  --name homer \
+  -p 8089:8080 \
+  -v /home/shak/container-program-files/homer/assets/:/www/assets \
+  --restart=always \
+  b4bz/homer:latest
+
+git clone https://github.com/jtmb/raspberrypi-dev-setup.git
+cp /home/shak/raspberrypi-dev-setup/Homer/config.yml /home/shak/container-program-files/homer/assets/config.yml
+sudo rm -rfv /home/shak/container-program-files/homer/assets/branconet_assets/
+sudo cp -r /home/shak/raspberrypi-dev-setup/Homer/branconet_assets /home/shak/container-program-files/homer/assets/branconet_assets/
