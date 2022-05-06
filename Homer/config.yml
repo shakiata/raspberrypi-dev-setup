@@ -3,7 +3,7 @@
 # See https://fontawesome.com/icons for icons options
 
 title: "Home Server Enviorment"
-subtitle: "Branconet"
+subtitle: "Shaknet"
 logo: "assets/branconet_assets/coffe.png"
 # icon: "fas fa-skull-crossbones" # Optional icon
 
@@ -59,9 +59,9 @@ links:
 #     url: "https://www.wikipedia.org/"
   # this will link to a second homer page that will load config from additionnal-page.yml and keep default config values as in config.yml file
   # see url field and assets/additionnal-page.yml.dist used in this example:
-  - name: "JTMB Github"
+  - name: "Shak Github"
     icon: "fab fa-github"
-    url: "https://github.com/jtmb/raspberrypi-dev-setup"
+    url: "https://github.com/shakiata"
     target: "deez nutz"
 
   - name: "Google Something"
@@ -72,13 +72,13 @@ links:
     icon: "fab fa-cloudflare"
     url: "https://dash.cloudflare.com/f4c09c14a6618297f411e9ee75305013/branconet.com"
 
-  - name: "name.com"
-    icon: "fas fa-signature"
-    url: "https://www.name.com/account/domain/details/branconet.com"
+  # - name: "name.com"
+  #   icon: "fas fa-signature"
+  #   url: "https://www.name.com/account/domain/details/branconet.com"
 
-  - name: "Self Hosted Github"
-    icon: "fab fa-github"
-    url: "https://github.com/awesome-selfhosted/awesome-selfhosted"
+  # - name: "Self Hosted Github"
+  #   icon: "fab fa-github"
+  #   url: "https://github.com/awesome-selfhosted/awesome-selfhosted"
 
   - name: "Help Wiki"
     icon: "far fa-question-circle"
@@ -94,8 +94,8 @@ services:
       - name: "PiHole"
         logo: "assets/branconet_assets/pihole.svg"
         subtitle: "PiHole hosted on PI"
-        tag: "192.168.0.19:8091"
-        url: "http://pihole.box:8091/admin/"
+        tag: "192.168.200.19:8091"
+        url: "http://pi.box:8091/admin/"
 
       - name: "Portainer"
         logo: "assets/branconet_assets/portainer.png"
