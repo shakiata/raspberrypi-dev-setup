@@ -94,20 +94,20 @@ services:
       - name: "PiHole"
         logo: "assets/branconet_assets/pihole.svg"
         subtitle: "PiHole hosted on PI"
-        #tag: "192.168.200.99"
+        tag: "pi.box"
         url: "http://pi.box/admin"
 
       - name: "Portainer"
         logo: "assets/branconet_assets/portainer.png"
         subtitle: "Protainer hosted on PI"
-        tag: "192.168.0.19:8090"
-        url: "http://portainer.box:8090/"
+        tag: "Portainer"
+        url: "http://portainer.box:8091/"
 
       - name: "Jenkins"
         logo: "assets/branconet_assets/jenkins.svg"
         subtitle: "Jenkins hosted on MINI"
-        tag: "192.168.0.21:8091"
-        url: "http://jenkins.box:8091/"
+        tag: "192.168.200.175:8091"
+        url: "192.168.200.175:8091"
 
 
   - name: "Monitoring"
