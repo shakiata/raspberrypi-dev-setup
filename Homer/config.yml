@@ -115,14 +115,14 @@ services:
     items:
       - name: "Glances Mini"
         logo: "assets/branconet_assets/glances.png"
-        subtitle: "Glances hosted on MINI"
+        subtitle: "Glances hosted on Mainframe"
         tag: "192.168.0.21:8093"
-        url: "http://192.168.0.21:8093/"
+        url: "http://192.168.200.175:8093/"
     
       - name: "Glances PI"
         logo: "assets/branconet_assets/glances.png"
         subtitle: "Glances hosted on PI"
-        tag: "192.168.0.19:8093"
+        tag: "192.168.200.99:8093"
         url: "http://192.168.0.19:8093/"
 
       - name: "Glances MEDIA"
@@ -135,11 +135,11 @@ services:
   - name: "Storage and Media"
     icon: "fas fa-hdd"
     items:
-      - name: "trueNAS"
-        logo: "assets/branconet_assets/truenas.png"
-        subtitle: "trueNAS OS"
-        tag: "192.168.0.25"
-        url: "http://truenas.home/"
+      # - name: "trueNAS"
+      #   logo: "assets/branconet_assets/truenas.png"
+      #   subtitle: "trueNAS OS"
+      #   tag: "192.168.0.25"
+      #   url: "http://truenas.home/"
     
       - name: "Plex"
         logo: "assets/branconet_assets/plex.png"
@@ -147,37 +147,37 @@ services:
         tag: "192.168.0.23:32400/manage"
         url: "http://192.168.0.23:32400/manage"
 
-      - name: "Next Cloud"
-        logo: "assets/branconet_assets/nextcloud.png"
-        subtitle: "NextCloud hosted on MEDIA"
-        tag: "192.168.0.23"
-        url: "https://cloud.branconet.com"
+      # - name: "Next Cloud"
+      #   logo: "assets/branconet_assets/nextcloud.png"
+      #   subtitle: "NextCloud hosted on MEDIA"
+      #   tag: "192.168.0.23"
+      #   url: "https://cloud.branconet.com"
 
 
-  - name: "Web Servers"
-    icon: "fas fa-cloud"
-    items:
+  # - name: "Web Servers"
+  #   icon: "fas fa-cloud"
+  #   items:
     
-      - name: "branconet.com"
-        logo: "assets/branconet_assets/nginx.png"
-        subtitle: "WebServer hosted on PI"
-        tag: "192.168.0.19:8080"
-        endpoint: "http://192.168.0.19:8080"
-        url: "https://branconet.com"
+  #     - name: "branconet.com"
+  #       logo: "assets/branconet_assets/nginx.png"
+  #       subtitle: "WebServer hosted on PI"
+  #       tag: "192.168.0.19:8080"
+  #       endpoint: "http://192.168.0.19:8080"
+  #       url: "https://branconet.com"
 
-      - name: "lucinda.branconet.com"
-        # type: Ping
-        logo: "assets/branconet_assets/nginx.png"
-        subtitle: "WebServer hosted on PI"
-        tag: "192.168.0.221:8081 (remote)"
-        url: "https://lucinda.branconet.com"
+  #     - name: "lucinda.branconet.com"
+  #       # type: Ping
+  #       logo: "assets/branconet_assets/nginx.png"
+  #       subtitle: "WebServer hosted on PI"
+  #       tag: "192.168.0.221:8081 (remote)"
+  #       url: "https://lucinda.branconet.com"
 
-      - name: "santos.branconet.com"
-        # type: Ping
-        logo: "assets/branconet_assets/nginx.png"
-        subtitle: "WebServer hosted on PI"
-        tag: "192.168.0.221:8082 (remote)"
-        url: "https://santos.branconet.com"
+  #     - name: "santos.branconet.com"
+  #       # type: Ping
+  #       logo: "assets/branconet_assets/nginx.png"
+  #       subtitle: "WebServer hosted on PI"
+  #       tag: "192.168.0.221:8082 (remote)"
+  #       url: "https://santos.branconet.com"
 
   - name: "Utilities"
     icon: "fas fa-wrench"
@@ -186,42 +186,42 @@ services:
       - name: "Nginx Proxy Manager"
         logo: "assets/branconet_assets/nginxm.png"
         subtitle: "Reverse proxy"
-        tag: "192.168.0.19:81"
+        tag: "192.168.290.99:81"
         url: "http://proxy.box:81/"
 
       - name: "File Browser"
         logo: "assets/branconet_assets/filebrowser.png"
         subtitle: "File Browser hosted on MEDIA"
-        tag: "192.168.0.23:8092"
+        tag: "192.168.200.99:8092"
         url: "http://files.box:8092/"
   
-      - name: "NETGEAR XR500 G Router"
+      - name: "Asus Router"
         logo: "assets/branconet_assets/netgear-nighthawk.svg"
-        subtitle: "DUMA OS Router"
-        tag: "192.168.0.1"
-        url: "http://192.168.0.1"
+        subtitle: "Awsome"
+        tag: "192.168.200.1"
+        url: "http://192.168.200.1"
 
-  - name: "Databases"
-    icon: "fas fa-database"
-    items:
+  # - name: "Databases"
+  #   icon: "fas fa-database"
+  #   items:
 
-      - name: "J's Blog"
-        logo: "assets/branconet_assets/ghost.png"
-        subtitle: "Hosted with Ghost Blog on MEDIA"
-        tag: "192.168.0.23:8081"
-        url: "https://blog.branconet.com/ghost"
+  #     - name: "J's Blog"
+  #       logo: "assets/branconet_assets/ghost.png"
+  #       subtitle: "Hosted with Ghost Blog on MEDIA"
+  #       tag: "192.168.0.23:8081"
+  #       url: "https://blog.branconet.com/ghost"
 
-      - name: "Grafana"
-        logo: "assets/branconet_assets/grafana_icon.svg"
-        subtitle: "Prometheus/Loki logs & DB Monitoring"
-        tag: "192.168.0.19:3000"
-        url: "http://grafana.box:3000/"
+  #     - name: "Grafana"
+  #       logo: "assets/branconet_assets/grafana_icon.svg"
+  #       subtitle: "Prometheus/Loki logs & DB Monitoring"
+  #       tag: "192.168.0.19:3000"
+  #       url: "http://grafana.box:3000/"
 
-      - name: "Vault Warden"
-        logo: "assets/branconet_assets/Bitwarden_logo.png"
-        subtitle: "BitWarden server"
-        tag: "192.168.0.23:8096"
-        url: "https://vault.branconet.com/"
+  #     - name: "Vault Warden"
+  #       logo: "assets/branconet_assets/Bitwarden_logo.png"
+  #       subtitle: "BitWarden server"
+  #       tag: "192.168.0.23:8096"
+  #       url: "https://vault.branconet.com/"
 
 
 
