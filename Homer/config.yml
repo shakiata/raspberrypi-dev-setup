@@ -94,8 +94,8 @@ services:
       - name: "PiHole"
         logo: "assets/branconet_assets/pihole.svg"
         subtitle: "PiHole hosted on PI"
-        tag: "192.168.200.99:8091"
-        url: "http://pi.box/admin/"
+        tag: "192.168.200.99"
+        url: "pi.box/admin/"
 
       - name: "Portainer"
         logo: "assets/branconet_assets/portainer.png"
