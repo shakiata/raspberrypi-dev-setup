@@ -144,8 +144,8 @@ services:
       - name: "Plex"
         logo: "assets/branconet_assets/plex.png"
         subtitle: "Plex hosted on MEDIA"
-        tag: "192.168.200.175:32400/manage"
-        url: "http://192.168.0.23:32400/manage"
+        tag: "AlL yOuR mOvIeS aRe BeLoNg ToO uS"
+        url: "http://192.168.200.175:32400/manage"
 
       # - name: "Next Cloud"
       #   logo: "assets/branconet_assets/nextcloud.png"
