@@ -193,7 +193,7 @@ services:
         logo: "assets/branconet_assets/filebrowser.png"
         subtitle: "File Browser hosted on MEDIA"
         tag: "192.168.200.99:8092"
-        url: "http://files.box:8092/"
+        url: "http://file.box:8092/"
   
       - name: "Asus Router"
         logo: "assets/branconet_assets/netgear-nighthawk.svg"
@@ -204,7 +204,6 @@ services:
   # - name: "Databases"
   #   icon: "fas fa-database"
   #   items:
-
   #     - name: "J's Blog"
   #       logo: "assets/branconet_assets/ghost.png"
   #       subtitle: "Hosted with Ghost Blog on MEDIA"
