@@ -144,7 +144,7 @@ services:
       - name: "Plex"
         logo: "assets/branconet_assets/plex.png"
         subtitle: "Plex hosted on MEDIA"
-        tag: "192.168.0.23:32400/manage"
+        tag: "192.168.200.175:32400/manage"
         url: "http://192.168.0.23:32400/manage"
 
       # - name: "Next Cloud"
@@ -186,8 +186,8 @@ services:
       - name: "Nginx Proxy Manager"
         logo: "assets/branconet_assets/nginxm.png"
         subtitle: "Reverse proxy"
-        tag: "192.168.290.99:81"
-        url: "http://proxy.box:81/"
+        tag: "192.168.200.99:81"
+        url: "http://192.168.200.99:81/"
 
       - name: "File Browser"
         logo: "assets/branconet_assets/filebrowser.png"
