@@ -113,23 +113,23 @@ services:
   - name: "Monitoring"
     icon: "fab fa-watchman-monitoring"
     items:
-      - name: "Glances Mini"
+      - name: "Glances MainFrame"
         logo: "assets/branconet_assets/glances.png"
         subtitle: "Glances hosted on Mainframe"
-        tag: "192.168.0.21:8093"
+        tag: "see the fun"
         url: "http://192.168.200.175:8093/"
     
       - name: "Glances PI"
         logo: "assets/branconet_assets/glances.png"
         subtitle: "Glances hosted on PI"
         tag: "192.168.200.99:8093"
-        url: "http://192.168.0.19:8093/"
+        url: "http://192.168.200.99:8093/"
 
-      - name: "Glances MEDIA"
-        logo: "assets/branconet_assets/glances.png"
-        subtitle: "Glances hosted on MEDIA"
-        tag: "192.168.0.23:8093"
-        url: "http://192.168.0.23:8093/"
+      # - name: "Glances MEDIA"
+      #   logo: "assets/branconet_assets/glances.png"
+      #   subtitle: "Glances hosted on MEDIA"
+      #   tag: "192.168.0.23:8093"
+      #   url: "http://192.168.0.23:8093/"
 
 
   - name: "Storage and Media"
