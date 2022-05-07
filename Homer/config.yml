@@ -62,7 +62,7 @@ links:
   - name: "Shak Github"
     icon: "fab fa-github"
     url: "https://github.com/shakiata"
-    target: "deez nutz"
+    target: "Git hub Repo's"
 
   - name: "Google Something"
     icon: "fab fa-google"
@@ -70,7 +70,7 @@ links:
 
   - name: "CloudFlare Reverse Proxy"
     icon: "fab fa-cloudflare"
-    url: "https://dash.cloudflare.com/f4c09c14a6618297f411e9ee75305013/branconet.com"
+    url: "https://dash.cloudflare.com/e3048f424cbb6035c6ea04d46fc17ea8/diggingin.pw"
 
   # - name: "name.com"
   #   icon: "fas fa-signature"
@@ -101,7 +101,7 @@ services:
         logo: "assets/branconet_assets/portainer.png"
         subtitle: "Protainer hosted on PI"
         tag: "Portainer"
-        url: "http://portainer.box:8091/"
+        url: "http://portainer.box:8091"
 
       - name: "Jenkins"
         logo: "assets/branconet_assets/jenkins.svg"
