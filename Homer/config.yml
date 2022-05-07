@@ -107,7 +107,7 @@ services:
         logo: "assets/branconet_assets/jenkins.svg"
         subtitle: "Jenkins hosted on MINI"
         tag: "192.168.200.175:8091"
-        url: "192.168.200.175:8091"
+        url: "http://192.168.200.175:8091"
 
 
   - name: "Monitoring"
