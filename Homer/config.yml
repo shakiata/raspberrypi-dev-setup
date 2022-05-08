@@ -41,11 +41,11 @@ colors:
     link-hover: "#ffdd57"
 
 # Optional message
-# message:
-#   style: "is-dark" # See https://bulma.io/documentation/components/message/#colors for styling options.
-#   title: "Welcome to Branconet!"
-#   icon: "fa fa-grin"
-#   content: "This is the homepage for branconet's home enviorment. <br /> Find more information on customizing homer <a href='https://github.com/bastienwirtz/homer'>github.com/bastienwirtz/homer</a>"
+message:
+  style: "is-dark" # See https://bulma.io/documentation/components/message/#colors for styling options.
+  title: "Welcome to Shaknet!"
+  icon: "fa fa-grin"
+  content: "Find your way around. <br /> Find more information on customizing homer <a href='https://github.com/bastienwirtz/homer'>github.com/bastienwirtz/homer</a>"
 
 # Optional navbar
 # links: [] # Allows for navbar (dark mode, layout, and search) without any links
