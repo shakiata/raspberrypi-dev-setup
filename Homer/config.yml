@@ -30,7 +30,7 @@ colors:
     highlight-primary: "#3367d6"
     highlight-secondary: "#4285f4"
     highlight-hover: "#5a95f5"
-    background: "#ffffff"
+    background: "#000000"
     card-background: "#511582"
     text: "#2ed92b"
     text-header: "#2ed92b"
