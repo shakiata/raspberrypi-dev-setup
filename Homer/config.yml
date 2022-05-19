@@ -125,11 +125,11 @@ services:
         tag: "192.168.200.99:8093"
         url: "http://192.168.200.99:8093/"
 
-      # - name: "Glances MEDIA"
-      #   logo: "assets/branconet_assets/glances.png"
-      #   subtitle: "Glances hosted on MEDIA"
-      #   tag: "192.168.0.23:8093"
-      #   url: "http://192.168.0.23:8093/"
+      - name: "Printer"
+        logo: "assets/branconet_assets/glances.png"
+        subtitle: "Everyone hates Printers"
+        tag: "192.168.200.111"
+        url: "http://192.168.200.111/"
 
 
   - name: "Storage and Media"
