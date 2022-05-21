@@ -101,7 +101,7 @@ services:
         logo: "assets/branconet_assets/portainer.png"
         subtitle: "Protainer hosted on PI"
         tag: "Portainer"
-        url: "http://portainer.box:8091"
+        url: "http://portainer.box"
 
       - name: "Jenkins"
         logo: "assets/branconet_assets/jenkins.svg"
